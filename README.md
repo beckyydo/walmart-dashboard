@@ -38,7 +38,7 @@ Description: Market share percentage of metro or micro region <br />
 Key Columns: City, State, Population, Market Share % <br />
 
 
-## DATA VISUALIZATION
+## Data Visualization
 ### (1) Candlestick Stock Graph
 ![Candlestick Graph](images/Candlestick_Sample.PNG)
 
@@ -54,5 +54,5 @@ Key Columns: City, State, Population, Market Share % <br />
 ### (2) Interactive Graph Sales vs Socioeconomic Variables (Temperature, CPI, Unemployment Rate, Fuel Price)
 ![Map Graph](images/Sales(2)_Sample.PNG)
 
-## FINAL DESIGN PROPOSAL
+## Final Design Proposal
 ![Dashboard Sample](images/Walmart_Sample.png)
