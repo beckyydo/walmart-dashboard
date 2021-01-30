@@ -21,4 +21,4 @@ For our project we would like to look into Walmart financial data relating to st
 ![Map Graph](images/Map_Sample.jpg)
 
 ## FINAL DESIGN PROPOSAL
-![Dashboard](images/Walmart_Sample.PNG)
+![Dashboard Sample](images/Walmart_Sample.png)
