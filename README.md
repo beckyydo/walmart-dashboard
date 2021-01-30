@@ -6,4 +6,4 @@ For our project we would like to look into Walmart financial data relating to st
 
 ## DATA VISUALIZATION
 ### (1) Candlestick Stock Graph
-![Candlestick Graph](Images/Candlestick_Sample.png)
+![Candlestick Graph]("https://github.com/beckyydo/walmart-dashboard/blob/main/images/Candlestick_Sample.PNG")
