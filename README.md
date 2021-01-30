@@ -6,4 +6,19 @@ For our project we would like to look into Walmart financial data relating to st
 
 ## DATA VISUALIZATION
 ### (1) Candlestick Stock Graph
-![Candlestick Graph](Images/Candlestick_Sample.png)
+![Candlestick Graph](images/Candlestick_Sample.PNG)
+
+### (2) Geomap Store Location
+#### OPTION 1
+![Map Graph](images/Map_Sample.JPG)
+#### OPTION 2
+![Map Graph](images/Map2_Sample.PNG)
+
+### (3) Weekly Sales Graph Across Years Separated by Store
+![Map Graph](images/Sales_Sample.JPG)
+
+### (2) Interactive Graph Sales vs Socioeconomic Variables (Temperature, CPI, Unemployment Rate, Fuel Price)
+![Map Graph](images/Map_Sample.JPG)
+
+## FINAL DESIGN PROPOSAL
+![Dashboard](images/Walmart_Sample.PNG)
