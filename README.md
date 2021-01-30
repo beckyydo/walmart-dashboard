@@ -10,12 +10,15 @@ For our project we would like to look into Walmart financial data relating to st
 
 ### (2) Geomap Store Location
 #### OPTION 1
-!Map Graph](images/Map_Sample.JPG)
+![Map Graph](images/Map_Sample.JPG)
 #### OPTION 2
-!Map Graph](images/Map2_Sample.PNG)
+![Map Graph](images/Map2_Sample.PNG)
 
 ### (3) Weekly Sales Graph Across Years Separated by Store
-!Map Graph](images/Sales_Sample.JPG)
+![Map Graph](images/Sales_Sample.JPG)
 
 ### (2) Interactive Graph Sales vs Socioeconomic Variables (Temperature, CPI, Unemployment Rate, Fuel Price)
-!Map Graph](images/Map.JPG)
+![Map Graph](images/Map_Sample.JPG)
+
+## FINAL DESIGN PROPOSAL
+![Dashboard](images/Walmart_Sample.PNG)
