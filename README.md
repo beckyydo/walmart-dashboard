@@ -5,13 +5,13 @@ For our project we would like to look into Walmart financial data relating to st
 
 ## Data Sources
 ### Data 1
-Link: https://www.kaggle.com/naresh31/walmart-recruiting-store-sales-forecasting  
-Data Source: Kaggle
-Data Type: csv
-SQL: Postgres
-Description: Store sales from 2010-2012 containing various socio economic variables, dates
-& holidays.
-Key Columns: Date (Weekly), Store #, Dept #, Sales, CPI, Fuel Price, Temperature, Is_Holiday 
+Link: https://www.kaggle.com/naresh31/walmart-recruiting-store-sales-forecasting  <br />
+Data Source: Kaggle <br />
+Data Type: csv <br />
+SQL: Postgres <br />
+Description: Store sales from 2010-2012 containing various socio economic variables, dates 
+& holidays. <br />
+Key Columns: Date (Weekly), Store #, Dept #, Sales, CPI, Fuel Price, Temperature, Is_Holiday <br />
 
 ### Data 2
 Link: https://www.kaggle.com/aayushkandpal/walmart-inc-stock-data-19722020-latest
