@@ -18,7 +18,7 @@ For our project we would like to look into Walmart financial data relating to st
 ![Map Graph](images/Sales_Sample.jpg)
 
 ### (2) Interactive Graph Sales vs Socioeconomic Variables (Temperature, CPI, Unemployment Rate, Fuel Price)
-![Map Graph](images/Sales(2)_Sample.jpg)
+![Map Graph](images/Sales(2)_Sample.png)
 
 ## FINAL DESIGN PROPOSAL
 ![Dashboard Sample](images/Walmart_Sample.png)
