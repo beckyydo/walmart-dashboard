@@ -1,4 +1,6 @@
+#################################################
 # Import Dependencies
+#################################################
 import os
 from flask import (
     Flask,
@@ -6,6 +8,11 @@ from flask import (
     jsonify,
     request,
     redirect)
+import sqlalchemy
+from sqlalchemy.ext.automap import automap_base
+from sqlalchemy.orm import Session
+from sqlalchemy import create_engine
+from sqlalchemy import func
 
 #################################################
 # Flask Setup
@@ -17,9 +24,14 @@ app = Flask(__name__)
 #################################################
 
 from flask_sqlalchemy import SQLAlchemy
-app.config['SQLALCHEMY_DATABASE_URI'] = "postgres://ofiglsqd:vVojrG9_zzJZCOLXz8rhKWXk6ivvYqAe@otto.db.elephantsql.com:5432/ofiglsqd"
+engine = create_engine("postgres://ofiglsqd:vVojrG9_zzJZCOLXz8rhKWXk6ivvYqAe@otto.db.elephantsql.com:5432/ofiglsqd", echo=False)
 
-db = SQLAlchemy(app)
+Base = automap_base()
+Base.prepare(engine, reflect=True)
+
+walmart = Base.classes.walmart
+session = Session(engine)
+
 
 # create route that renders index.html template
 @app.route("/")
@@ -28,9 +40,12 @@ def home():
 
 
 @app.route("/api/walmart")
-def walmart():
-    data = db.session.query(walmart).all()
-    return jsonify(data)
+def walmart_route():
+    data = session.query(walmart.Fuel_Price).all()
+    fuel = []
+    for x in data:
+        fuel.append(x[0])
+    return jsonify(fuel)
 
 
 if __name__ == "__main__":
