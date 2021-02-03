@@ -1,0 +1,271 @@
+,CITY,ABBR,POPULATION,MARKET_SHARE,STATE,STATE_CODE,Summary,County,County_Subdivision,Place,Consolidated_City,Area_Name
+0,Atchison, Kan.,16580,95%,Kansas,20.0,50.0,5.0,0.0,0.0,0.0,Atchison County
+1,Atchison, Kan.,16580,95%,Kansas,20.0,61.0,5.0,2900.0,0.0,0.0,Atchison city
+2,Atchison, Kan.,16580,95%,Kansas,20.0,162.0,0.0,0.0,2900.0,0.0,Atchison city
+3,Portales, N.M.,19730,95%,New Mexico,35.0,162.0,0.0,0.0,59260.0,0.0,Portales city
+4,Sterling, Colo.,22068,91%,Colorado,8.0,162.0,0.0,0.0,73935.0,0.0,Sterling city
+5,Deming, N.M.,24699,90%,New Mexico,35.0,162.0,0.0,0.0,20270.0,0.0,Deming city
+6,Guymon,Ohio,21385,90%,,,,,,,,
+7,North Platte, Neb.,37043,87%,Nebraska,31.0,162.0,0.0,0.0,35000.0,0.0,North Platte city
+8,Wahpeton, N.D.,23036,84%,North Dakota,38.0,61.0,77.0,82660.0,0.0,0.0,Wahpeton city
+9,Wahpeton, N.D.,23036,84%,North Dakota,38.0,162.0,0.0,0.0,82660.0,0.0,Wahpeton city
+10,Coffeyville, Kan.,33434,83%,Kansas,20.0,61.0,125.0,14600.0,0.0,0.0,Coffeyville city
+11,Coffeyville, Kan.,33434,83%,Kansas,20.0,162.0,0.0,0.0,14600.0,0.0,Coffeyville city
+12,Othello, Wash.,19806,83%,Washington,53.0,162.0,0.0,0.0,52215.0,0.0,Othello city
+13,Bismarck, N.D.,135654,83%,North Dakota,38.0,61.0,15.0,7200.0,0.0,0.0,Bismarck city
+14,Bismarck, N.D.,135654,83%,North Dakota,38.0,162.0,0.0,0.0,7200.0,0.0,Bismarck city
+15,Helena-West Helena, Ark.,20176,80%,Arkansas,5.0,162.0,0.0,0.0,31190.0,0.0,Helena-West Helena city
+16,Altus, Okla.,25931,77%,Oklahoma,40.0,162.0,0.0,0.0,1700.0,0.0,Altus city
+17,Parsons, Kan.,20761,77%,Kansas,20.0,61.0,99.0,54675.0,0.0,0.0,Parsons city
+18,Parsons, Kan.,20761,77%,Kansas,20.0,162.0,0.0,0.0,54675.0,0.0,Parsons city
+19,Miami, Okla.,32260,77%,Oklahoma,40.0,162.0,0.0,0.0,48000.0,0.0,Miami city
+20,Sweetwater, Texas,15101,77%,Texas,48.0,162.0,0.0,0.0,71540.0,0.0,Sweetwater city
+21,Grenada, Miss.,21706,76%,Mississippi,28.0,50.0,43.0,0.0,0.0,0.0,Grenada County
+22,Grenada, Miss.,21706,76%,Mississippi,28.0,162.0,0.0,0.0,29460.0,0.0,Grenada city
+23,Huron, S.D.,18082,75%,South Dakota,46.0,61.0,5.0,31060.0,0.0,0.0,Huron city
+24,Huron, S.D.,18082,75%,South Dakota,46.0,61.0,103.0,31100.0,0.0,0.0,Huron township
+25,Huron, S.D.,18082,75%,South Dakota,46.0,162.0,0.0,0.0,31060.0,0.0,Huron city
+26,Greensburg, Ind.,26711,74%,Indiana,18.0,162.0,0.0,0.0,29718.0,0.0,Greensburg city
+27,Clarksdale, Miss.,25085,74%,Mississippi,28.0,162.0,0.0,0.0,13820.0,0.0,Clarksdale city
+28,Dumas, Texas,22485,74%,Texas,48.0,162.0,0.0,0.0,21556.0,0.0,Dumas city
+29,Dickinson, N.D.,33239,73%,North Dakota,38.0,162.0,0.0,0.0,19620.0,0.0,Dickinson city
+30,Winnemucca, Nev.,17327,73%,Nevada,32.0,162.0,0.0,0.0,84800.0,0.0,Winnemucca city
+31,Hereford, Texas,19159,73%,Texas,48.0,162.0,0.0,0.0,33320.0,0.0,Hereford city
+32,Pampa, Texas,23423,72%,Texas,48.0,162.0,0.0,0.0,54912.0,0.0,Pampa city
+33,Mexico, Mo.,26325,71%,Missouri,29.0,162.0,0.0,0.0,47648.0,0.0,Mexico city
+34,Pierre, S.D.,22192,71%,South Dakota,46.0,61.0,65.0,49600.0,0.0,0.0,Pierre city
+35,Pierre, S.D.,22192,71%,South Dakota,46.0,162.0,0.0,0.0,49600.0,0.0,Pierre city
+36,Arkadelphia, Ark.,22798,71%,Arkansas,5.0,162.0,0.0,0.0,1870.0,0.0,Arkadelphia city
+37,Point Pleasant, W.Va.,56967,71%,West Virginia,54.0,162.0,0.0,0.0,64708.0,0.0,Point Pleasant city
+38,Malvern, Ark.,33811,71%,Arkansas,5.0,162.0,0.0,0.0,43610.0,0.0,Malvern city
+39,Las Vegas, N.M.,28262,71%,New Mexico,35.0,162.0,0.0,0.0,39940.0,0.0,Las Vegas city
+40,Lawton, Okla.,132272,71%,Oklahoma,40.0,162.0,0.0,0.0,41850.0,0.0,Lawton city
+41,Joplin, Mo.,180743,71%,Missouri,29.0,162.0,0.0,0.0,37592.0,0.0,Joplin city
+42,Fitzgerald, Ga.,17373,70%,Georgia,13.0,162.0,0.0,0.0,29528.0,0.0,Fitzgerald city
+43,Marshall, Mo.,23448,70%,Missouri,29.0,162.0,0.0,0.0,46316.0,0.0,Marshall city
+44,Brookhaven, Miss.,35053,70%,Mississippi,28.0,162.0,0.0,0.0,8820.0,0.0,Brookhaven city
+45,Union City, Tenn.,37185,70%,Tennessee,47.0,162.0,0.0,0.0,75940.0,0.0,Union City city
+46,Amarillo, Texas,263797,70%,Texas,48.0,162.0,0.0,0.0,3000.0,0.0,Amarillo city
+47,Ruston, La.,48279,70%,Louisiana,22.0,162.0,0.0,0.0,66655.0,0.0,Ruston city
+48,Stillwater, Okla.,82260,69%,Oklahoma,40.0,162.0,0.0,0.0,70300.0,0.0,Stillwater city
+49,Wauchula, Fla.,27697,69%,Florida,12.0,162.0,0.0,0.0,75375.0,0.0,Wauchula city
+50,Cambridge, Md.,32186,69%,Maryland,24.0,162.0,0.0,0.0,12400.0,0.0,Cambridge city
+51,Forrest City, Ark.,27268,69%,Arkansas,5.0,162.0,0.0,0.0,24430.0,0.0,Forrest City city
+52,Vernon, Texas,13146,69%,Texas,48.0,162.0,0.0,0.0,75308.0,0.0,Vernon city
+53,Fayetteville, Ark.,525855,69%,Arkansas,5.0,162.0,0.0,0.0,23290.0,0.0,Fayetteville city
+54,Moberly, Mo.,25214,69%,Missouri,29.0,162.0,0.0,0.0,49034.0,0.0,Moberly city
+55,Beatrice, Neb.,21818,69%,Nebraska,31.0,61.0,67.0,3390.0,0.0,0.0,Beatrice city
+56,Beatrice, Neb.,21818,69%,Nebraska,31.0,162.0,0.0,0.0,3390.0,0.0,Beatrice city
+57,Natchez, Miss.,51877,69%,Mississippi,28.0,162.0,0.0,0.0,50440.0,0.0,Natchez city
+58,Sulphur Springs, Texas,36476,68%,Texas,48.0,162.0,0.0,0.0,70904.0,0.0,Sulphur Springs city
+59,Borger, Texas,22055,68%,Texas,48.0,162.0,0.0,0.0,9556.0,0.0,Borger city
+60,Indianola, Miss.,27561,68%,Mississippi,28.0,162.0,0.0,0.0,34740.0,0.0,Indianola city
+61,Woodward, Okla.,21706,68%,Oklahoma,40.0,50.0,153.0,0.0,0.0,0.0,Woodward County
+62,Woodward, Okla.,21706,68%,Oklahoma,40.0,162.0,0.0,0.0,82150.0,0.0,Woodward city
+63,Meridian, Miss.,105387,67%,Mississippi,28.0,162.0,0.0,0.0,46640.0,0.0,Meridian city
+64,Durant, Okla.,45339,66%,Oklahoma,40.0,162.0,0.0,0.0,22050.0,0.0,Durant city
+65,Mitchell, S.D.,23428,66%,South Dakota,46.0,61.0,35.0,43100.0,0.0,0.0,Mitchell city
+66,Mitchell, S.D.,23428,66%,South Dakota,46.0,61.0,35.0,43140.0,0.0,0.0,Mitchell UT
+67,Mitchell, S.D.,23428,66%,South Dakota,46.0,162.0,0.0,0.0,43100.0,0.0,Mitchell city
+68,Springfield, Mo.,462821,66%,Missouri,29.0,61.0,83.0,70018.0,0.0,0.0,Springfield township
+69,Springfield, Mo.,462821,66%,Missouri,29.0,162.0,0.0,0.0,70000.0,0.0,Springfield city
+70,Dixon, Ill.,34724,66%,Illinois,17.0,61.0,103.0,20175.0,0.0,0.0,Dixon township
+71,Dixon, Ill.,34724,66%,Illinois,17.0,162.0,0.0,0.0,20162.0,0.0,Dixon city
+72,Mineral Wells, Texas,28104,66%,Texas,48.0,162.0,0.0,0.0,48684.0,0.0,Mineral Wells city
+73,Arcadia, Fla.,35890,66%,Florida,12.0,162.0,0.0,0.0,1750.0,0.0,Arcadia city
+74,Vernon Parish, La.,51637,65%,Louisiana,22.0,,,,,,
+75,Jonesboro, Ark.,131178,65%,Arkansas,5.0,162.0,0.0,0.0,35710.0,0.0,Jonesboro city
+76,Branson, Mo.,86046,65%,Missouri,29.0,162.0,0.0,0.0,7966.0,0.0,Branson city
+77,Whitewater-Elkhorn, Wis.,102562,65%,Wisconsin,55.0,,,,,,
+78,Levelland, Texas,23528,65%,Texas,48.0,162.0,0.0,0.0,42448.0,0.0,Levelland city
+79,Columbus, Ind.,82559,65%,Indiana,18.0,61.0,5.0,14752.0,0.0,0.0,Columbus township
+80,Columbus, Ind.,82559,65%,Indiana,18.0,162.0,0.0,0.0,14734.0,0.0,Columbus city
+81,Jamestown, N.D.,21208,65%,North Dakota,38.0,61.0,93.0,40580.0,0.0,0.0,Jamestown city
+82,Jamestown, N.D.,21208,65%,North Dakota,38.0,162.0,0.0,0.0,40580.0,0.0,Jamestown city
+83,McAlester, Okla.,44721,64%,Oklahoma,40.0,162.0,0.0,0.0,44800.0,0.0,McAlester city
+84,Duncan, Okla.,44724,64%,Oklahoma,40.0,162.0,0.0,0.0,21900.0,0.0,Duncan city
+85,Seneca Falls, N.Y.,35206,64%,New York,36.0,61.0,99.0,66333.0,0.0,0.0,Seneca Falls town
+86,Grand Island, Neb.,85805,64%,Nebraska,31.0,162.0,0.0,0.0,19595.0,0.0,Grand Island city
+87,Lexington, Neb.,25980,63%,Nebraska,31.0,162.0,0.0,0.0,26910.0,0.0,Lexington city
+88,Wichita Falls, Texas,152271,63%,Texas,48.0,162.0,0.0,0.0,79000.0,0.0,Wichita Falls city
+89,Magnolia, Ark.,24126,62%,Arkansas,5.0,162.0,0.0,0.0,43460.0,0.0,Magnolia city
+90,Monroe, La.,181422,62%,Louisiana,22.0,162.0,0.0,0.0,51410.0,0.0,Monroe city
+91,Bennettsville, S.C.,27439,62%,South Carolina,45.0,162.0,0.0,0.0,5680.0,0.0,Bennettsville city
+92,Elk City, Okla.,24087,62%,Oklahoma,40.0,162.0,0.0,0.0,23500.0,0.0,Elk City city
+93,Mountain Home, Idaho,25613,62%,Idaho,16.0,162.0,0.0,0.0,54730.0,0.0,Mountain Home city
+94,Mount Pleasant, Texas,33078,62%,Texas,48.0,162.0,0.0,0.0,49800.0,0.0,Mount Pleasant city
+95,Fairmont, W.Va.,57180,62%,West Virginia,54.0,162.0,0.0,0.0,26452.0,0.0,Fairmont city
+96,Sedalia, Mo.,42362,61%,Missouri,29.0,162.0,0.0,0.0,66440.0,0.0,Sedalia city
+97,Espafiola, N.M.,40002,61%,New Mexico,35.0,,,,,,
+98,Tupelo, Miss.,140563,61%,Mississippi,28.0,162.0,0.0,0.0,74840.0,0.0,Tupelo city
+99,Cape Girardeau, Mo.,98337,61%,Missouri,29.0,50.0,31.0,0.0,0.0,0.0,Cape Girardeau County
+100,Cape Girardeau, Mo.,98337,61%,Missouri,29.0,162.0,0.0,0.0,11242.0,0.0,Cape Girardeau city
+101,Fort Smith, Ark.,282199,61%,Arkansas,5.0,162.0,0.0,0.0,24550.0,0.0,Fort Smith city
+102,Platteville, Wis.,52866,61%,Wisconsin,55.0,61.0,43.0,63250.0,0.0,0.0,Platteville city
+103,Platteville, Wis.,52866,61%,Wisconsin,55.0,61.0,43.0,63275.0,0.0,0.0,Platteville town
+104,Platteville, Wis.,52866,61%,Wisconsin,55.0,162.0,0.0,0.0,63250.0,0.0,Platteville city
+105,San Angelo, Texas,121466,61%,Texas,48.0,162.0,0.0,0.0,64472.0,0.0,San Angelo city
+106,Fallon, Nev.,24420,61%,Nevada,32.0,162.0,0.0,0.0,24100.0,0.0,Fallon city
+107,Goldsboro, N.C.,124074,60%,North Carolina,37.0,162.0,0.0,0.0,26880.0,0.0,Goldsboro city
+108,Cordele, Ga.,23099,60%,Georgia,13.0,162.0,0.0,0.0,19616.0,0.0,Cordele city
+109,Ada, Okla.,38583,60%,Oklahoma,40.0,162.0,0.0,0.0,200.0,0.0,Ada city
+110,St. Joseph, Mo.,128474,60%,Missouri,29.0,162.0,0.0,0.0,64550.0,0.0,St. Joseph city
+111,Hot Springs, Ark.,97286,59%,Arkansas,5.0,162.0,0.0,0.0,33400.0,0.0,Hot Springs city
+112,Oklahoma City, Okla.,1379709,59%,Oklahoma,40.0,162.0,0.0,0.0,55000.0,0.0,Oklahoma City city
+113,Bastrop, La.,27216,59%,Louisiana,22.0,162.0,0.0,0.0,4685.0,0.0,Bastrop city
+114,Sault Ste. Marie, Mich.,38414,59%,Michigan,26.0,61.0,33.0,71740.0,0.0,0.0,Sault Ste. Marie city
+115,Sault Ste. Marie, Mich.,38414,59%,Michigan,26.0,162.0,0.0,0.0,71740.0,0.0,Sault Ste. Marie city
+116,El Dorado, Ark.,40210,59%,Arkansas,5.0,162.0,0.0,0.0,21070.0,0.0,El Dorado city
+117,Hattiesburg, Miss.,149129,58%,Mississippi,28.0,162.0,0.0,0.0,31020.0,0.0,Hattiesburg city
+118,Carlsbad, N.M.,58117,58%,New Mexico,35.0,162.0,0.0,0.0,12150.0,0.0,Carlsbad city
+119,Clewiston, Fla.,38777,58%,Florida,12.0,162.0,0.0,0.0,13000.0,0.0,Clewiston city
+120,Garden City, Kan.,41119,58%,Kansas,20.0,61.0,55.0,25325.0,0.0,0.0,Garden City city
+121,Garden City, Kan.,41119,58%,Kansas,20.0,61.0,55.0,25350.0,0.0,0.0,Garden City township
+122,Garden City, Kan.,41119,58%,Kansas,20.0,162.0,0.0,0.0,25325.0,0.0,Garden City city
+123,Tyler, Texas,224825,58%,Texas,48.0,50.0,457.0,0.0,0.0,0.0,Tyler County
+124,Tyler, Texas,224825,58%,Texas,48.0,162.0,0.0,0.0,74144.0,0.0,Tyler city
+125,Grand Forks, N.D.,104979,58%,North Dakota,38.0,50.0,35.0,0.0,0.0,0.0,Grand Forks County
+126,Grand Forks, N.D.,104979,58%,North Dakota,38.0,61.0,35.0,32060.0,0.0,0.0,Grand Forks city
+127,Grand Forks, N.D.,104979,58%,North Dakota,38.0,61.0,35.0,32100.0,0.0,0.0,Grand Forks township
+128,Grand Forks, N.D.,104979,58%,North Dakota,38.0,162.0,0.0,0.0,32060.0,0.0,Grand Forks city
+129,Blytheville, Ark.,44660,58%,Arkansas,5.0,162.0,0.0,0.0,7330.0,0.0,Blytheville city
+130,Jesup, Ga.,29022,58%,Georgia,13.0,162.0,0.0,0.0,42268.0,0.0,Jesup city
+131,Selma, Ala.,41952,57%,Alabama,1.0,162.0,0.0,0.0,69120.0,0.0,Selma city
+132,Craig, Colo.,12935,57%,Colorado,8.0,162.0,0.0,0.0,17760.0,0.0,Craig city
+133,DeRidder, La.,36776,57%,Louisiana,22.0,162.0,0.0,0.0,20610.0,0.0,DeRidder city
+134,Weatherford, Okla.,29964,57%,Oklahoma,40.0,162.0,0.0,0.0,79450.0,0.0,Weatherford city
+135,Las Cruces, N.M.,218401,57%,New Mexico,35.0,162.0,0.0,0.0,39380.0,0.0,Las Cruces city
+136,Greenwood, Miss.,41433,57%,Mississippi,28.0,162.0,0.0,0.0,29340.0,0.0,Greenwood city
+137,Roswell, N.M.,66433,57%,New Mexico,35.0,162.0,0.0,0.0,64930.0,0.0,Roswell city
+138,Alexandria, La.,156114,57%,Louisiana,22.0,162.0,0.0,0.0,975.0,0.0,Alexandria city
+139,Vermillion, S.D.,14227,56%,South Dakota,46.0,61.0,27.0,66700.0,0.0,0.0,Vermillion city
+140,Vermillion, S.D.,14227,56%,South Dakota,46.0,61.0,27.0,66740.0,0.0,0.0,Vermillion township
+141,Vermillion, S.D.,14227,56%,South Dakota,46.0,61.0,97.0,66780.0,0.0,0.0,Vermillion township
+142,Vermillion, S.D.,14227,56%,South Dakota,46.0,162.0,0.0,0.0,66700.0,0.0,Vermillion city
+143,Lebanon, Mo.,35411,56%,Missouri,29.0,162.0,0.0,0.0,41168.0,0.0,Lebanon city
+144,Camden, Ark.,29594,56%,Arkansas,5.0,162.0,0.0,0.0,10720.0,0.0,Camden city
+145,Yankton, S.D.,22994,56%,South Dakota,46.0,50.0,135.0,0.0,0.0,0.0,Yankton County
+146,Yankton, S.D.,22994,56%,South Dakota,46.0,61.0,135.0,73060.0,0.0,0.0,Yankton city
+147,Yankton, S.D.,22994,56%,South Dakota,46.0,162.0,0.0,0.0,73060.0,0.0,Yankton city
+148,Florence, Ala.,148719,56%,Alabama,1.0,162.0,0.0,0.0,26896.0,0.0,Florence city
+149,Texarkana, Texas,150652,56%,Texas,48.0,162.0,0.0,0.0,72368.0,0.0,Texarkana city
+150,Liberal, Kan.,23145,56%,Kansas,20.0,61.0,175.0,39825.0,0.0,0.0,Liberal city
+151,Liberal, Kan.,23145,56%,Kansas,20.0,61.0,175.0,39850.0,0.0,0.0,Liberal township
+152,Liberal, Kan.,23145,56%,Kansas,20.0,162.0,0.0,0.0,39825.0,0.0,Liberal city
+153,Menomonie, Wis.,44266,56%,Wisconsin,55.0,61.0,33.0,51025.0,0.0,0.0,Menomonie city
+154,Menomonie, Wis.,44266,56%,Wisconsin,55.0,61.0,33.0,51050.0,0.0,0.0,Menomonie town
+155,Menomonie, Wis.,44266,56%,Wisconsin,55.0,162.0,0.0,0.0,51025.0,0.0,Menomonie city
+156,Blackfoot, Idaho,44975,56%,Idaho,16.0,162.0,0.0,0.0,7840.0,0.0,Blackfoot city
+157,Rome, Ga.,97137,56%,Georgia,13.0,162.0,0.0,0.0,66668.0,0.0,Rome city
+158,Paragould, Ark.,44702,56%,Arkansas,5.0,162.0,0.0,0.0,53390.0,0.0,Paragould city
+159,Gulfport-Biloxi-Pascagoula, Miss.,396677,56%,Mississippi,28.0,,,,,,
+160,Bainbridge, Ga.,27330,56%,Georgia,13.0,162.0,0.0,0.0,4896.0,0.0,Bainbridge city
+161,Danville, Ky.,54117,56%,Kentucky,21.0,162.0,0.0,0.0,19882.0,0.0,Danville city
+162,Scottsbluff, Neb.,38304,56%,Nebraska,31.0,162.0,0.0,0.0,44245.0,0.0,Scottsbluff city
+163,Clovis, N.M.,51513,55%,New Mexico,35.0,162.0,0.0,0.0,16420.0,0.0,Clovis city
+164,Hutchinson, Minn.,35778,55%,Minnesota,27.0,61.0,85.0,30644.0,0.0,0.0,Hutchinson city
+165,Hutchinson, Minn.,35778,55%,Minnesota,27.0,61.0,85.0,30662.0,0.0,0.0,Hutchinson township
+166,Hutchinson, Minn.,35778,55%,Minnesota,27.0,162.0,0.0,0.0,30644.0,0.0,Hutchinson city
+167,Talladega-Sylacauga, Ala.,91351,55%,Alabama,1.0,,,,,,
+168,Jacksonville, N.C.,192666,55%,North Carolina,37.0,162.0,0.0,0.0,34200.0,0.0,Jacksonville city
+169,Warrensburg, Mo.,55167,55%,Missouri,29.0,162.0,0.0,0.0,77092.0,0.0,Warrensburg city
+170,St. Robert, Mo.,54039,55%,Missouri,29.0,162.0,0.0,0.0,65144.0,0.0,St. Robert city
+171,Maryville, Mo.,23237,55%,Missouri,29.0,162.0,0.0,0.0,46640.0,0.0,Maryville city
+172,Longview, Texas,219965,55%,Texas,48.0,162.0,0.0,0.0,43888.0,0.0,Longview city
+173,Fairfield, Iowa,17222,55%,Iowa,19.0,162.0,0.0,0.0,26445.0,0.0,Fairfield city
+174,Dodge City, Kan.,34252,55%,Kansas,20.0,61.0,57.0,18250.0,0.0,0.0,Dodge City city
+175,Dodge City, Kan.,34252,55%,Kansas,20.0,162.0,0.0,0.0,18250.0,0.0,Dodge City city
+176,Crescent City, Calif.,27555,55%,California,6.0,162.0,0.0,0.0,17022.0,0.0,Crescent City city
+177,Junction City, Kan.,37328,55%,Kansas,20.0,61.0,61.0,35750.0,0.0,0.0,Junction City city
+178,Junction City, Kan.,37328,55%,Kansas,20.0,162.0,0.0,0.0,35750.0,0.0,Junction City city
+179,Starkville, Miss.,50598,55%,Mississippi,28.0,162.0,0.0,0.0,70240.0,0.0,Starkville city
+180,Parkersburg, W.Va.,93125,55%,West Virginia,54.0,162.0,0.0,0.0,62140.0,0.0,Parkersburg city
+181,Thomaston, Ga.,26436,55%,Georgia,13.0,162.0,0.0,0.0,76168.0,0.0,Thomaston city
+182,Searcy, Ark.,79919,55%,Arkansas,5.0,50.0,129.0,0.0,0.0,0.0,Searcy County
+183,Searcy, Ark.,79919,55%,Arkansas,5.0,162.0,0.0,0.0,63020.0,0.0,Searcy city
+184,Dayton, Tenn.,32403,54%,Tennessee,47.0,162.0,0.0,0.0,19700.0,0.0,Dayton city
+185,Brookings, S.D.,34318,54%,South Dakota,46.0,50.0,11.0,0.0,0.0,0.0,Brookings County
+186,Brookings, S.D.,34318,54%,South Dakota,46.0,61.0,11.0,7580.0,0.0,0.0,Brookings city
+187,Brookings, S.D.,34318,54%,South Dakota,46.0,61.0,11.0,7620.0,0.0,0.0,Brookings township
+188,Brookings, S.D.,34318,54%,South Dakota,46.0,162.0,0.0,0.0,7580.0,0.0,Brookings city
+189,Summerville, Ga.,24956,54%,Georgia,13.0,162.0,0.0,0.0,74376.0,0.0,Summerville city
+190,Albertville, Ala.,95247,54%,Alabama,1.0,162.0,0.0,0.0,988.0,0.0,Albertville city
+191,La Grande, Ore.,26131,54%,Oregon,41.0,162.0,0.0,0.0,40350.0,0.0,La Grande city
+192,Farmington, Mo.,66824,54%,Missouri,29.0,162.0,0.0,0.0,23752.0,0.0,Farmington city
+193,Pueblo, Colo.,164368,54%,Colorado,8.0,50.0,101.0,0.0,0.0,0.0,Pueblo County
+194,Pueblo, Colo.,164368,54%,Colorado,8.0,162.0,0.0,0.0,62000.0,0.0,Pueblo city
+195,Toccoa, Ga.,25775,54%,Georgia,13.0,162.0,0.0,0.0,76756.0,0.0,Toccoa city
+196,Hannibal, Mo.,39091,53%,Missouri,29.0,162.0,0.0,0.0,30214.0,0.0,Hannibal city
+197,Laramie, Wyo.,37950,53%,Wyoming,56.0,50.0,21.0,0.0,0.0,0.0,Laramie County
+198,Laramie, Wyo.,37950,53%,Wyoming,56.0,162.0,0.0,0.0,45050.0,0.0,Laramie city
+199,Moultrie, Ga.,45794,53%,Georgia,13.0,162.0,0.0,0.0,53060.0,0.0,Moultrie city
+200,Alexandria, Minn.,37309,53%,Minnesota,27.0,61.0,41.0,928.0,0.0,0.0,Alexandria city
+201,Alexandria, Minn.,37309,53%,Minnesota,27.0,61.0,41.0,946.0,0.0,0.0,Alexandria township
+202,Alexandria, Minn.,37309,53%,Minnesota,27.0,162.0,0.0,0.0,928.0,0.0,Alexandria city
+203,Russellville, Ark.,86165,53%,Arkansas,5.0,162.0,0.0,0.0,61670.0,0.0,Russellville city
+204,Clarksburg, W.Va.,94906,53%,West Virginia,54.0,162.0,0.0,0.0,15628.0,0.0,Clarksburg city
+205,Anniston, Ala.,115648,53%,Alabama,1.0,162.0,0.0,0.0,1852.0,0.0,Anniston city
+206,Connersville, Ind.,23671,53%,Indiana,18.0,61.0,41.0,14950.0,0.0,0.0,Connersville township
+207,Connersville, Ind.,23671,53%,Indiana,18.0,162.0,0.0,0.0,14932.0,0.0,Connersville city
+208,Bluefield, W.Va.,103989,53%,West Virginia,54.0,162.0,0.0,0.0,8524.0,0.0,Bluefield city
+209,Brownwood, Texas,38507,53%,Texas,48.0,162.0,0.0,0.0,10780.0,0.0,Brownwood city
+210,Vernal, Utah,39259,53%,Utah,49.0,162.0,0.0,0.0,80090.0,0.0,Vernal city
+211,Cheyenne, Wyo.,98078,52%,Wyoming,56.0,162.0,0.0,0.0,13900.0,0.0,Cheyenne city
+212,Statesboro, Ga.,73724,52%,Georgia,13.0,162.0,0.0,0.0,73256.0,0.0,Statesboro city
+213,Cedartown, Ga.,42062,52%,Georgia,13.0,162.0,0.0,0.0,14500.0,0.0,Cedartown city
+214,Morgan City, La.,53273,52%,Louisiana,22.0,162.0,0.0,0.0,52040.0,0.0,Morgan City city
+215,Ames, Iowa,97498,52%,Iowa,19.0,162.0,0.0,0.0,1855.0,0.0,Ames city
+216,Coshocton, Ohio,36552,52%,Ohio,39.0,50.0,31.0,0.0,0.0,0.0,Coshocton County
+217,Coshocton, Ohio,36552,52%,Ohio,39.0,61.0,31.0,18868.0,0.0,0.0,Coshocton city
+218,Coshocton, Ohio,36552,52%,Ohio,39.0,162.0,0.0,0.0,18868.0,0.0,Coshocton city
+219,Scottsboro, Ala.,52716,52%,Alabama,1.0,162.0,0.0,0.0,68736.0,0.0,Scottsboro city
+220,Rochelle, Ill.,52253,52%,Illinois,17.0,162.0,0.0,0.0,64746.0,0.0,Rochelle city
+221,Jacksonville, Ill.,39955,52%,Illinois,17.0,162.0,0.0,0.0,38115.0,0.0,Jacksonville city
+222,Shawano, Wis.,45869,52%,Wisconsin,55.0,50.0,115.0,0.0,0.0,0.0,Shawano County
+223,Shawano, Wis.,45869,52%,Wisconsin,55.0,61.0,115.0,72925.0,0.0,0.0,Shawano city
+224,Shawano, Wis.,45869,52%,Wisconsin,55.0,162.0,0.0,0.0,72925.0,0.0,Shawano city
+225,Kennett, Mo.,31429,52%,Missouri,29.0,162.0,0.0,0.0,38306.0,0.0,Kennett city
+226,Spearfish, S.D.,25531,52%,South Dakota,46.0,61.0,81.0,60020.0,0.0,0.0,Spearfish city
+227,Spearfish, S.D.,25531,52%,South Dakota,46.0,162.0,0.0,0.0,60020.0,0.0,Spearfish city
+228,Tulsa, Okla.,998637,52%,Oklahoma,40.0,50.0,143.0,0.0,0.0,0.0,Tulsa County
+229,Tulsa, Okla.,998637,52%,Oklahoma,40.0,162.0,0.0,0.0,75000.0,0.0,Tulsa city
+230,Great Falls, Mont.,82786,52%,Montana,30.0,162.0,0.0,0.0,32800.0,0.0,Great Falls city
+231,Charleston, Ill.,62972,52%,Illinois,17.0,61.0,29.0,12580.0,0.0,0.0,Charleston township
+232,Charleston, Ill.,62972,52%,Illinois,17.0,162.0,0.0,0.0,12567.0,0.0,Charleston city
+233,Silver City, N.M.,29072,52%,New Mexico,35.0,162.0,0.0,0.0,73260.0,0.0,Silver City town
+234,Chillicothe, Ohio,76975,52%,Ohio,39.0,162.0,0.0,0.0,14184.0,0.0,Chillicothe city
+235,Ardmore, Okla.,49056,52%,Oklahoma,40.0,162.0,0.0,0.0,2600.0,0.0,Ardmore city
+236,Evanston, Ill.,20961,52%,Illinois,17.0,61.0,31.0,24595.0,0.0,0.0,Evanston township
+237,Evanston, Ill.,20961,52%,Illinois,17.0,162.0,0.0,0.0,24582.0,0.0,Evanston city
+238,Jefferson City, Mo.,152851,52%,Missouri,29.0,162.0,0.0,0.0,37000.0,0.0,Jefferson City city
+239,Vidalia, Ga.,36212,52%,Georgia,13.0,162.0,0.0,0.0,79388.0,0.0,Vidalia city
+240,Elkins, W.Va.,29269,52%,West Virginia,54.0,162.0,0.0,0.0,24580.0,0.0,Elkins city
+241,Marshall, Minn.,25601,51%,Minnesota,27.0,50.0,89.0,0.0,0.0,0.0,Marshall County
+242,Marshall, Minn.,25601,51%,Minnesota,27.0,61.0,83.0,40688.0,0.0,0.0,Marshall city
+243,Marshall, Minn.,25601,51%,Minnesota,27.0,61.0,99.0,40706.0,0.0,0.0,Marshall township
+244,Marshall, Minn.,25601,51%,Minnesota,27.0,162.0,0.0,0.0,40688.0,0.0,Marshall city
+245,Tahlequah, Okla.,48645,51%,Oklahoma,40.0,162.0,0.0,0.0,72100.0,0.0,Tahlequah city
+246,Casper, Wyo.,83011,51%,Wyoming,56.0,162.0,0.0,0.0,13150.0,0.0,Casper city
+247,Natchitoches, La.,39553,51%,Louisiana,22.0,50.0,69.0,0.0,0.0,0.0,Natchitoches Parish
+248,Natchitoches, La.,39553,51%,Louisiana,22.0,162.0,0.0,0.0,53545.0,0.0,Natchitoches city
+249,Yuma, Ariz.,205420,51%,Arizona,4.0,50.0,27.0,0.0,0.0,0.0,Yuma County
+250,Yuma, Ariz.,205420,51%,Arizona,4.0,162.0,0.0,0.0,85540.0,0.0,Yuma city
+251,Athens, Texas,79945,51%,Texas,48.0,162.0,0.0,0.0,4504.0,0.0,Athens city
+252,Kirksville, Mo.,30158,51%,Missouri,29.0,162.0,0.0,0.0,39026.0,0.0,Kirksville city
+253,Morgantown, W.Va.,137227,51%,West Virginia,54.0,162.0,0.0,0.0,55756.0,0.0,Morgantown city
+254,Daphne, Ala.,208745,51%,Alabama,1.0,162.0,0.0,0.0,19648.0,0.0,Daphne city
+255,Watertown, S.D.,28425,51%,South Dakota,46.0,61.0,29.0,69300.0,0.0,0.0,Watertown city
+256,Watertown, S.D.,28425,51%,South Dakota,46.0,162.0,0.0,0.0,69300.0,0.0,Watertown city
+257,Victoria, Texas,101671,51%,Texas,48.0,50.0,469.0,0.0,0.0,0.0,Victoria County
+258,Victoria, Texas,101671,51%,Texas,48.0,162.0,0.0,0.0,75428.0,0.0,Victoria city
+259,Vincennes, Ind.,38026,51%,Indiana,18.0,61.0,83.0,79217.0,0.0,0.0,Vincennes township
+260,Vincennes, Ind.,38026,51%,Indiana,18.0,162.0,0.0,0.0,79208.0,0.0,Vincennes city
+261,Van Wert, Ohio,28729,51%,Ohio,39.0,50.0,161.0,0.0,0.0,0.0,Van Wert County
+262,Van Wert, Ohio,28729,51%,Ohio,39.0,162.0,0.0,0.0,79562.0,0.0,Van Wert city
+263,Logan, Utah,137492,50%,Utah,49.0,162.0,0.0,0.0,45860.0,0.0,Logan city
+264,Frankfort, Ind.,32929,50%,Indiana,18.0,162.0,0.0,0.0,25324.0,0.0,Frankfort city
+265,Maysville, Ky.,17230,50%,Kentucky,21.0,162.0,0.0,0.0,51024.0,0.0,Maysville city
+266,Enid, Okla.,62602,50%,Oklahoma,40.0,162.0,0.0,0.0,23950.0,0.0,Enid city
+267,Shawnee, Okla.,71961,50%,Oklahoma,40.0,162.0,0.0,0.0,66800.0,0.0,Shawnee city
+268,Troy, Ala.,33368,50%,Alabama,1.0,162.0,0.0,0.0,76920.0,0.0,Troy city
+269,Fort Morgan, Colo.,28721,50%,Colorado,8.0,162.0,0.0,0.0,27810.0,0.0,Fort Morgan city
