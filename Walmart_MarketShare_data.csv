@@ -5,11 +5,11 @@ Sterling, Colo.,22068,91%
 Deming, N.M.,24699,90%
 Guymon, Ohio,21385,90%
 Nonh Platte, Neb.,37043,87%
-Wahpeton,N.D.,23036,84%
+Wahpeton, N.D.,23036,84%
 Coffey.'ille, Kan.,33434,83%
 Othello, Wash.,19806,83%
 Bismarck, N.D.,135654,83%
-Helena-West Helena, Ark,20176,80%
+Helena-West Helena, Ark.,20176,80%
 Altus, Okla.,25931,77%
 Parsons, Kan.,20761,77%
 Miami, Okla.,32260,77%
@@ -60,7 +60,7 @@ Arcadia, Fla.,35890,66%
 Fort Polk South, La.,51637,65%
 Jonesboro, Ark.,131178,65%
 Branson, Mo.,86046,65%
-Whitewater-Elkhorn,Wis.,102562,65%
+Whitewater-Elkhorn, Wis.,102562,65%
 Levelland, Texas,23528,65%
 Columbus, Ind.,82559,65%
 Jamestown, N.D.,21208,65%
@@ -80,15 +80,15 @@ Fairmont, W.Va.,57180,62%
 Sedalia, Mo.,42362,61%
 Espafiola, N.M.,40002,61%
 Tupelo, Miss.,140563,61%
-Cape Girardeau,Mo.,98337,61%
-Fort Smith,Ark.,282199,61%
+Cape Girardeau, Mo.,98337,61%
+Fort Smith, Ark.,282199,61%
 Platteville, Wis.,52866,61%
 San Angelo, Texas,121466,61%
 Fallon, Nev.,24420,61%
 Goldsboro, N.C.,124074,60%
 Cordele, Ga.,23099,60%
 Ada, Okla.,38583,60%
-St Joseph,Mo.,128474,60%
+St Joseph, Mo.,128474,60%
 Hot Springs, Ark.,97286,59%
 Oklahoma City, Okla.,1379709,59%
 Bastrop, La.,27216,59%
@@ -99,7 +99,7 @@ Carlsbad-Artesia, N.M.,58117,58%
 Clewiston, Fla.,38777,58%
 Garden City, Kan.,41119,58%
 Tyler, Texas,224825,58%
-Grand Forks,N.D.,104979,58%
+Grand Forks, N.D.,104979,58%
 Blytheville, Ark.,44660,58%
 Jesup, Ga.,29022,58%
 Selma, Ala.,41952,57%
@@ -114,8 +114,8 @@ Vermillion, S.D.,14227,56%
 Lebanon, Mo.,35411,56%
 Camden, Ark.,29594,56%
 Yankton, S.D.,22994,56%
-Florence-Muscle Shoals, Ala,148719,56%
-Texarkana,Texas,150652,56%
+Florence-Muscle Shoals, Ala.,148719,56%
+Texarkana, Texas,150652,56%
 Liberal, Kan.,23145,56%
 Menomonie, Wis.,44266,56%
 Blackfoot, Idaho,44975,56%
@@ -155,9 +155,9 @@ Moultrie, Ga.,45794,53%
 Alexandria, Minn.,37309,53%
 Russellville, Ark.,86165,53%
 Clarksburg, W.Va.,94906,53%
-Anniston-Oxford-Jacksonville, Ala,115648,53%
+Anniston-Oxford-Jacksonville, Ala.,115648,53%
 Connersville, Ind.,23671,53%
-Bluefield, W.Va.-Va.,103989,53%
+Bluefield, W.Va,103989,53%
 Brownwood, Texas,38507,53%
 Vernal, Utah,39259,53%
 Cheyenne, Wyo.,98078,52%
@@ -178,7 +178,7 @@ Charleston-Mattoon, Ill.,62972,52%
 Silver City, N.M.,29072,52%
 Chillicothe, Ohio,76975,52%
 Ardmore, Okla.,49056,52%
-Evanston, W90,20961,52%
+Evanston, Ill.,20961,52%
 Jefferson City, Mo.,152851,52%
 Vidalia, Ga.,36212,52%
 Elkins, W.Va.,29269,52%
@@ -195,7 +195,7 @@ Watertown, S.D.,28425,51%
 Victoria, Texas,101671,51%
 Vincennes, Ind.,38026,51%
 Van Weft, Ohio,28729,51%
-Logan,Utah,137492,50%
+Logan, Utah,137492,50%
 Frankfort, Ind.,32929,50%
 Maysville, Ky.,17230,50%
 Enid, Okla.,62602,50%
