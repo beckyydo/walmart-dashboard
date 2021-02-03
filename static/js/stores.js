@@ -1,7 +1,10 @@
 //Load and preview data
-d3.json("data/walmart.json").then(function(data) {
+var data = d3.json("data/walmart.json").then(function(data) {
     console.log(data);
 });
+
+//Grab lat & long columns; create variables
+
 
 const mymap = L.map('mapid').setView([0, 0], 1);
 
