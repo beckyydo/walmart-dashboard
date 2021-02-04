@@ -4,7 +4,7 @@ import os
 
 PORT = 8001
 
-web_dir = os.path.join(os.path.dirname(__file__), 'StarterCode')
+web_dir = os.path.join(os.path.dirname(__file__))
 os.chdir(web_dir)
 
 Handler = http.server.SimpleHTTPRequestHandler

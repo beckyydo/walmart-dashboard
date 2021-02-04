@@ -1,0 +1,25 @@
+.line {
+    fill: none;
+    stroke-width: 2px;
+  }
+  
+  .green {
+    stroke: green;
+  }
+  
+  .blue {
+    stroke: blue;
+  }
+  
+  .text {
+    font-size: 16px;
+    text-anchor: middle;
+  }
+  
+  .store-text {
+    fill: blue;
+  }
+  
+  .weekly_sales-text {
+    fill: green;
+  }
