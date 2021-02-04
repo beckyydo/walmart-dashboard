@@ -2,8 +2,7 @@
 # Import Dependencies
 #################################################
 import os
-from flask import (
-    Flask,
+from flask import (Flask,
     render_template,
     jsonify,
     request,
@@ -30,8 +29,8 @@ Base = automap_base()
 Base.prepare(engine, reflect=True)
 
 walmart = Base.classes.walmart
-session = Session(engine)
 
+session = Session(engine)
 
 # create route that renders index.html template
 @app.route("/")
@@ -39,13 +38,14 @@ def home():
     return render_template("index.html")
 
 
-@app.route("/api/walmart")
-def walmart_route():
+# Market Share Service Route
+@app.route("/api/market_share")
+def market_route():
     data = session.query(walmart.Fuel_Price).all()
-    fuel = []
+    market = []
     for x in data:
-        fuel.append(x[0])
-    return jsonify(fuel)
+        market.append(x[0])
+    return jsonify(market)
 
 
 if __name__ == "__main__":

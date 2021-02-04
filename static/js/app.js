@@ -1,3 +1,3 @@
-d3.json("/api/walmart").then(function(response){
-    console.log(response)
+d3.json("/api/market_share").then(function(response){
+        console.log(response);
 })
