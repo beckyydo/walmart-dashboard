@@ -24,7 +24,7 @@ var chartGroup = svg.append("g")
 var parseTime = d3.timeParse("%Y-%m-%d");
 
 // Import data from a CSV file
-d3.csv("/sales-by-store-summed.csv").then(function(salesData) {  
+d3.csv("sales-by-store-summed.csv").then(function(salesData) {  
   console.log(salesData);
   
   // Format Data
@@ -60,7 +60,7 @@ d3.csv("/sales-by-store-summed.csv").then(function(salesData) {
     // Add y1-axis to the left side of the display
     chartGroup.append("g")
       // Define the color of the axis text
-      .classed("green", true)
+      .classed("black", true)
       .call(leftAxis);
 
     // Add y2-axis to the right side of the display
@@ -83,17 +83,17 @@ d3.csv("/sales-by-store-summed.csv").then(function(salesData) {
     chartGroup.append("path")
         .data([salesData])
         .attr("d", line1)
-        .classed("line green", true);
+        .classed("line black", true);
 
     // Append a path for line2
     chartGroup.append("path")
         .data([salesData])
-        .attr("d", line2)
+        .attr("d", line1)
         .classed("line blue", true);
 
     // Append axes titles
     chartGroup.append("text")
-     .attr("transform", `translate(${width / 2}, ${height + margin.top + 20})`)
+     .attr("transform", "rotate(-90)", `translate(${width / 2}, ${height + margin.top + 20})`)
         .classed("weekly-text text", true)
         .text("Weekly Sales");
 

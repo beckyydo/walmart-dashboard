@@ -1,14 +1,14 @@
 .line {
     fill: none;
-    stroke-width: 2px;
+    stroke-width: 1px;
   }
   
-  .green {
-    stroke: green;
+  .black {
+    stroke: rgb(17, 1, 12);
   }
   
   .blue {
-    stroke: blue;
+    stroke: rgb(152, 190, 247);
   }
   
   .text {
@@ -17,9 +17,9 @@
   }
   
   .store-text {
-    fill: blue;
+    fill: rgb(152, 190, 247));
   }
   
   .weekly_sales-text {
-    fill: green;
+    fill: rgb(17, 1, 12);
   }
