@@ -6,7 +6,6 @@ d3.csv("graph.csv").then( data =>{
 
     var unique_state = [...new Set(state_name.sort())]; 
 
-    console.log(state_name)
     //DROPDOWN MENU
     var DropDownMenu = d3.select("#selDataset");
     // Remove old html id names
@@ -65,9 +64,26 @@ function init(data){
             countrywidth: 0.5,
             subunitwidth: 0.5
         }
+
     };
 
     Plotly.newPlot("market-share", data1, layout1);
+
+    // Create table
+    var tbody = d3.select("tbody");
+    tbody.html("");
+    data.forEach((entry)=>{
+        var row = tbody.append("tr");
+        
+        var cell = row.append("td");
+        cell.text(entry.CITY)
+        var cell2 = row.append("td");
+        cell2.text(entry.STATE)
+        var cell3 = row.append("td");
+        cell3.text(entry.POPULATION)
+        var cell4 = row.append("td");
+        cell4.text(entry.MARKET_SHARE)        
+    })
 };
 
 // Update Plot

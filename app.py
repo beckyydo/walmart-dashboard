@@ -29,6 +29,7 @@ Base = automap_base()
 Base.prepare(engine, reflect=True)
 
 walmart = Base.classes.walmart
+market_share = Base.classes.market_share
 
 session = Session(engine)
 
@@ -41,12 +42,15 @@ def home():
 # Market Share Service Route
 @app.route("/api/market_share")
 def market_route():
-    data = session.query(walmart.Fuel_Price).all()
-    market = []
+    data = session.query(market_share.CITY, market_share.STATE, market_share.Latitude, 
+                        market_share.Longitude).all()
     
-    for x in data:
-        market.append(x[0])
-    return jsonify(market)
+    market_df = []
+    for row in data:
+        market_dict = {'City': row[0],'State': row[1], 
+        'Lat': row[2], 'Lon': row[3]}
+        market_df.append(market_dict)
+    return jsonify(market_df)
 
 
 if __name__ == "__main__":
