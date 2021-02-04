@@ -43,6 +43,7 @@ def home():
 def market_route():
     data = session.query(walmart.Fuel_Price).all()
     market = []
+    
     for x in data:
         market.append(x[0])
     return jsonify(market)
