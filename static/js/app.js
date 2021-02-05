@@ -1,26 +1,28 @@
+// Market Share Service Route
 var url = "/api/market_share"
-d3.json(url).then(data =>{
 
-        var state_name = data.map(d => d.State);
+// Initalize Graph and Tables
+d3.json(url).then(data =>{
+    // Retrieve State Name List
+    var state_name = data.map(d => d.State);
+    // Add All Option in Menu
+    state_name.push("*All")
+    // Sort and Get Unique State Name for Dropdown Menu
+    var unique_state = [...new Set(state_name.sort())]; 
+    // Dropdown Menu
+    var DropDownMenu = d3.select("#selDataset");
+    // Remove old html id names
+    DropDownMenu.html("");    
+    // Append id names option to html
+    unique_state.map(id_name => DropDownMenu.append("option").attr("value",id_name).html(id_name));
+    // Initalize Data 
+    init(data);
+})
     
-        state_name.push("*All")
-        
-        // Sort and Get Unique State Name for Dropdown Menu
-        var unique_state = [...new Set(state_name.sort())]; 
+function init(data){
     
-        // DROPDOWN MENU
-        var DropDownMenu = d3.select("#selDataset");
-        // Remove old html id names
-        DropDownMenu.html("");    
-        // Append id names option to html
-        unique_state.map(id_name => DropDownMenu.append("option").attr("value",id_name).html(id_name));
-    
-        init(data);
-    })
-    
-    function init(data){
-    
-        var scl = [[0,'rgb(5, 10, 172)'],[0.35,'rgb(40, 60, 190)'],[0.5,'rgb(70, 100, 245)'], [0.6,'rgb(90, 120, 245)'],[0.7,'rgb(106, 137, 247)'],[1,'rgb(220, 220, 220)']];
+    // Set Colorscale
+    var scl = [[0,'rgb(5, 10, 172)'],[0.35,'rgb(40, 60, 190)'],[0.5,'rgb(70, 100, 245)'], [0.6,'rgb(90, 120, 245)'],[0.7,'rgb(106, 137, 247)'],[1,'rgb(220, 220, 220)']];
     
         var data1 = [{
             type:'scattergeo',
@@ -69,33 +71,37 @@ d3.json(url).then(data =>{
     
         };
     
-        Plotly.newPlot("market-share", data1, layout1);
+    Plotly.newPlot("market-share", data1, layout1);
     
-        // Create table
-        var tbody = d3.select("tbody");
-        tbody.html("");
-        data.forEach((entry)=>{
-            var row = tbody.append("tr");
-            
-            var cell = row.append("td");
-            cell.text(entry.City)
-            var cell2 = row.append("td");
-            cell2.text(entry.State)
-            var cell3 = row.append("td");
-            cell3.text(entry.Population)
-            var cell4 = row.append("td");
-            cell4.text(entry.Share)        
-        })
-    };
+    // Create table
+    var tbody = d3.select("tbody");
+    // Remove old tbody
+    tbody.html("");
+    //
+    tbody.attr()
+    // Add data to tbody
+    data.forEach((entry)=>{
+        // Apend row
+        var row = tbody.append("tr");
+        // Append value to row
+        var cell = row.append("td");
+        cell.text(entry.City)
+        var cell2 = row.append("td");
+        cell2.text(entry.State)
+        var cell3 = row.append("td");
+        cell3.text(entry.Population)
+        var cell4 = row.append("td");
+        cell4.text(entry.Share)        
+    })
+};
     
-    // Update Plot
-    d3.selectAll("body").on('change', updatePlotly);
+// Update Plot
+d3.selectAll("#selDataset").on('change', updatePlotly);
     
+// Update Plot Function
+function updatePlotly(){
     
-    // Update Plot Function
-    function updatePlotly(){
-    
-        d3.json(url).then(data => {
+    d3.json(url).then(data => {
             // Get Value From Search Bar
             var dropdownMenu = d3.select("#selDataset").node().value;
             // Clear graphs
@@ -151,12 +157,31 @@ d3.json(url).then(data =>{
                     subunitcolor: 'rgb(217,217,217)',
                     countrycolor: 'rgb(217,217,217)',
                     countrywidth: 0.5,
-                    subunitwidth: 0.5
-                }
+                    subunitwidth: 0.5}
                 };
+
                 Plotly.newPlot("market-share", data2, layout2);
+                // Create table
+                var tbody = d3.select("tbody");
+                // Clear tbody
+                tbody.html("");
+
+                filter_data.forEach((entry)=>{
+                    //Add row
+                    var row = tbody.append("tr");
+                    //Add value to row
+                    var cell = row.append("td");
+                    cell.text(entry.City)
+                    console.log(entry.City)
+                    var cell2 = row.append("td");
+                    cell2.text(entry.State)
+                    var cell3 = row.append("td");
+                    cell3.text(entry.Population)
+                    var cell4 = row.append("td");
+                    cell4.text(entry.Share)        
+                });                
             }
-        })
-    };
+    })
+};
     
     
