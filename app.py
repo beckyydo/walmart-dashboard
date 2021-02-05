@@ -43,12 +43,14 @@ def home():
 @app.route("/api/market_share")
 def market_route():
     data = session.query(market_share.CITY, market_share.STATE, market_share.Latitude, 
-                        market_share.Longitude).all()
+                        market_share.Longitude, market_share.POPULATION,
+                        market_share.MARKET_SHARE).all()
     
     market_df = []
     for row in data:
         market_dict = {'City': row[0],'State': row[1], 
-        'Lat': row[2], 'Lon': row[3]}
+        'Lat': row[2], 'Lon': row[3], 'Population': row[4],
+        'Share': row[5]}
         market_df.append(market_dict)
     return jsonify(market_df)
 

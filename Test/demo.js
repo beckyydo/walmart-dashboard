@@ -1,6 +1,6 @@
-d3.csv("graph.csv").then( data =>{
+d3.json(url).then( data =>{
 
-    var state_name = data.map(d => d.STATE);
+    var state_name = data.map(d => d.State);
 
     state_name.push("*All")
 
@@ -23,10 +23,10 @@ function init(data){
     var data1 = [{
         type:'scattergeo',
         locationmode: 'USA-states',
-        lon: data.map(d => d.Longitude),
-        lat: data.map(d => d.Latitude),
-        hoverinfor:  data.map(d => d.CITY),
-        text:  data.map(d => d.CITY),
+        lon: data.map(d => d.Lon),
+        lat: data.map(d => d.Lat),
+        hoverinfor:  data.map(d => d.City),
+        text:  data.map(d => d.City),
         mode: 'markers',
         marker: {
             size: 8,
@@ -93,7 +93,7 @@ d3.selectAll("body").on('change', updatePlotly);
 // Update Plot Function
 function updatePlotly(){
 
-    d3.csv("graph.csv").then(data => {
+    d3.json(url).then(data => {
         // Get Value From Search Bar
         var dropdownMenu = d3.select("#selDataset").node().value;
         // Clear graphs
