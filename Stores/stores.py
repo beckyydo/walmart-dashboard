@@ -37,14 +37,18 @@ session = Session(engine)
 # create route that renders index.html template
 @app.route("/")
 def home():
-    return render_template("index.html")
+    return render_template("stores.html")
 
 
 @app.route("/api/store")
 def store_route():
     locationData = session.query(store.latitude, store.longitude).all()
     session.close()
-    return jsonify(locationData)
+    location = []
+    for row in locationData:
+        locationDict = {'Latitude': row[0], 'Longitude': row[1]}
+        location.append(locationDict)
+    return jsonify(location)
 
 
 if __name__ == "__main__":

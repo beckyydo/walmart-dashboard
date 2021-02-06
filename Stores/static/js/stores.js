@@ -105,3 +105,39 @@
 //     ellipse(x, y, 5, 5);
 //   };
 // };
+
+
+var url = "/api/store";
+
+d3.json(url).then(function(data) {
+    console.log(data);
+});
+
+function buildChart(data) {
+    var storeData = {
+        type:'scattergeo',
+        locationmode: 'USA-states',
+        latitude: data.map(data => data.Latitude)
+    }
+
+    var layout = {
+        scope: "usa",
+        title: "Walmart Store Locations",
+        showlegend: false,
+        geo: {
+            scope:"usa",
+            projection: {
+                type:"albers usa"
+            },
+            showland: true,
+            landcolor: "rgb(217, 217, 217)",
+            subunitwidth: 1,
+            countrywidth: 1,
+            subunitcolor: "rgb(255, 255, 255)",
+            countrycolor: "rgb(255,255,255)"
+            }
+        };
+        Plotly.newPlot("mapid", storeData, layout);
+}
+    
+
