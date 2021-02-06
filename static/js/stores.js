@@ -107,13 +107,13 @@
 // };
 
 
-var url = "/api/store";
+// var url = "/api/store";
 
-d3.json(url).then(function(data) {
+d3.json('/api/store').then(data => {
     console.log(data);
 });
 
-function buildChart(data) {
+function buildChart() {
     var storeData = {
         type:'scattergeo',
         locationmode: 'USA-states',

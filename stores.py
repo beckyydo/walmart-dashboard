@@ -37,7 +37,7 @@ session = Session(engine)
 # create route that renders index.html template
 @app.route("/")
 def home():
-    return render_template("stores.html")
+    return render_template("index.html")
 
 
 @app.route("/api/store")
