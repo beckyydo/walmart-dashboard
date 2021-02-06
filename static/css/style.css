@@ -3,21 +3,6 @@
     height:500px;
 };
 .well{
-    padding:20px;
-    background-color:powderblue;
+    padding:40px;
+    background-color:#0279E2;
 };
-table {
-    width: 100%;
-    display:block;
-}
-thead {
-    display: inline-block;
-    width: 100%;
-    height: 30px;
-}
-tbody {
-    height: 300px;
-    display: inline-block;
-    width: 100%;
-    overflow: auto;
-}

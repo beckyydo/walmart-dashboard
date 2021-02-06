@@ -29,7 +29,7 @@ function init(data){
             locationmode: 'USA-states',
             lon: data.map(d => d.Lon),
             lat: data.map(d => d.Lat),
-            hoverinfor:  data.map(d => d.City),
+            hoverinfor:  `City Name: ${data.map(d => d.City)} <br> Population: ${data.map(d=>d.Population)}`,
             text:  data.map(d => d.City),
             mode: 'markers',
             marker: {
@@ -68,7 +68,6 @@ function init(data){
                 countrywidth: 0.5,
                 subunitwidth: 0.5
             }
-    
         };
     
     Plotly.newPlot("market-share", data1, layout1);
@@ -79,6 +78,7 @@ function init(data){
     tbody.html("");
     //
     tbody.attr()
+    
     // Add data to tbody
     data.forEach((entry)=>{
         // Apend row
