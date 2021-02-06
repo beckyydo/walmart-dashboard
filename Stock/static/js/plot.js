@@ -1,23 +1,23 @@
-d3.csv("assets/data/WalmartStock.csv").then(function(data){
+d3.json("/api/stock").then(function(data){
   //console.log(data);
-  var dates= data.map(record=>record.Date);
-  var closingPrices = data.map(record=>record.Close);
-  var highPrices = data.map(record=>record.High);
-  var lowPrices = data.map(record=>record.Low);
-  var openingPrices = data.map(record=>record.Open);
-  var volume= data.map(record=> parseInt(record.Volume))
-  var movingAvg= data.map(record=>record.MovingAvg);
-  var colors = data.map(record=>record.Color)
-  //console.log(movingAvg);
-  //console.log(volume);
-  //console.log(color);
+  
+
+  var dates= data.map(record=>record.dates);
+  var closingPrices = data.map(record=>record.closingPrices);
+  var highPrices = data.map(record=>record.highPrices);
+  var lowPrices = data.map(record=>record.lowPrices);
+  var openingPrices = data.map(record=>record.openingPrices);
+  var volume= data.map(record=> parseInt(record.volume))
+  var movingAvg= data.map(record=>record.movingAvg);
+  var colors = data.map(record=>record.colors)
+  
   trace1 = {
       name: 'Walmart high, low, open, close stock prices', 
       type: 'candlestick', 
       x: dates, 
       yaxis: 'y2', 
       low: lowPrices, 
-      high: highPrices, 
+      high:highPrices, 
       open: openingPrices, 
       close: closingPrices
     };
@@ -29,7 +29,7 @@ d3.csv("assets/data/WalmartStock.csv").then(function(data){
       x: dates, 
       y: movingAvg, 
       yaxis: 'y2', 
-      marker: {color: '#86797a'}
+      marker: {color: '#0000FF'}
     };
     trace3 = {
       name: 'Volume', 
