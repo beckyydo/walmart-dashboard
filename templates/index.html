@@ -11,19 +11,21 @@
 </head>
 
 <body>
-    <div style="text-align:center;margin-top:20px;">
-        <h1 style = "color:#0279E2;">Market Share <img src = "{{ url_for('static', filename='Logo.jpg') }}" alt ="Walmart Logo" style ="width:40px;"></h1>
-        <h5 style = "color:#0279E2;">Metro & Micro Region</h5>
+    <div class = "container">
+    <div style="text-align:center;margin-top:20px;background-color:#0279E2;padding:35px;">
+        <h1 style = "color:white;">Market Share <img src = "{{ url_for('static', filename='Logo.png') }}" alt ="Walmart Logo" style ="width:40px;margin-bottom:10px;"></h1>
+        <h5 style = "color:white;">Metro & Micro Region</h5>
+    </div>
     </div>
     <div class = "container" style = "text-align:center;">
         <div class = "row">
             <div class = "col-l-4">
                 <div style = "border-color:#0279E2;border-width:5px;">
-                    <h5 style = "color:#0279E2;">State Filter</h5>
+                    <h5 style = "color:#0279E2;margin-top:10px">State Filter</h5>
                     <select id="selDataset"></select>
                     <br><br>
                 </div>
-                <div class="table-responsive" style ="text-align:center; max-height:340px">
+                <div class="table-responsive" style ="text-align:center; max-height:330px">
                     <table class="table table-sm table-striped" style="font-size:12px;width:380px;">
                         <thead>
                             <tr style = "color:white;background-color:#0279E2;">
@@ -38,7 +40,7 @@
                 </div>
             </div>
             <div class = "col-l-8" style = "text-align:right;">
-                <div id = "market-share" style ="width:100%;"></div>
+                <div id = "market-share"></div>
             </div>
         <div class = "row">
             <div class = "col">
