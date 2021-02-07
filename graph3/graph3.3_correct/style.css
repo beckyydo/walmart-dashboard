@@ -1,0 +1,30 @@
+.iframeContainer {
+    padding: 20px;
+    border: 1px solid #e3e3e3;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+  }
+  
+body {
+    /* Padding bottom by footer height */
+    padding-bottom: 80px;
+}
+
+body { font: 12px Arial;}
+
+path { 
+    stroke: steelblue;
+    stroke-width: 2;
+    fill: none;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: grey;
+    stroke-width: 1;
+    shape-rendering: crispEdges;
+}
