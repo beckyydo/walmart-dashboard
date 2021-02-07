@@ -11,7 +11,7 @@ d3.json("/api/stock").then(function(data){
     var colors = data.map(record=>record.colors)
     
     trace1 = {
-        name: 'Walmart High, Low, Open, Close Stock Prices', 
+        name: 'Walmart High, Low, Open, <br> & Close Stock Prices', 
         type: 'candlestick', 
         x: dates, 
         yaxis: 'y2', 
@@ -67,7 +67,7 @@ d3.json("/api/stock").then(function(data){
     };
       data = [trace1, trace2, trace3];
       layout = {
-        title: "Walmart Stock",
+        title: "Walmart Daily Stock Prices",
         xaxis: {
             rangeselector: selectorOptions,
             rangeslider: {},
