@@ -1,0 +1,30 @@
+#market-share {
+    width: 100%;
+    height:500px;
+}
+
+.well {
+    padding:40px;
+    background-color:#0279E2;
+}
+
+#table-max {
+    text-align: center; 
+    max-height: 330px;
+    font-size:12px;
+    width:380px;
+}
+
+.market-banner {
+    text-align:center;
+    background-color:#0279E2;
+    padding:35px;
+}
+#logo {
+    width:40px;
+    margin-bottom:10px;
+}
+#state-filter {
+    color:#0279E2;
+    margin-top:10px
+}
