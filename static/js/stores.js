@@ -83,7 +83,7 @@ function createMap(stores) {
     myMap.addLayer(clusters);
 
     L.control.layers(baseMaps, overlayMaps, {
-        collapsed: false
+        collapsed: true
     }).addTo(myMap);
 
 }
