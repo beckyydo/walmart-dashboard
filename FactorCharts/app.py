@@ -1,7 +1,6 @@
 #################################################
 # Import Dependencies
 #################################################
-!pip install sqlalchemy
 import os
 from flask import (Flask,
     render_template,
@@ -45,7 +44,7 @@ def home():
 def factor_route():
     data = session.query(walmart.Store, walmart.Fuel_Price, 
                         walmart.Temperature_C, walmart.Unemployment,
-                        walmart.Weekly_Sales, walmart.CPI).all()
+                        walmart.CPI, walmart.Weekly_Sales).all()
     # Create dictionary from pulled data
     factor_df = []
     for row in data:
