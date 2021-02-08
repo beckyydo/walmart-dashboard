@@ -10,7 +10,7 @@ d3.json(url).then(wmartData => {
   })
   console.log(dropRef)
   dropRef.map(store => d3.select("#selDataset").append("option").attr("value", store).html(store));
-  init(wmartData);
+  getChart(wmartData);
 })
 
 d3.selectAll("#selDataset").on('change', updateChart);
@@ -22,19 +22,19 @@ function updateChart() {
     d3.select(".chart").html("");
     var updateData;
     if (dropDown === "All Stores") {
-      init(data)
+      getChart(data)
     }
     else {
       updateData = data.filter(row => row.Store === dropDown)
       console.log(updateData)
-      init(updateData)
+      getChart(updateData)
     }   
     d3.select(".counter").text(dropDown)
   })
 }
 
 
-function init(walData) {
+function getChart(walData) {
   walData.forEach(function(sample) {
     sample.Fuel_Price = +sample.Fuel_Price;
     sample.Temperature_C = +sample.Temperature_C;
@@ -67,7 +67,7 @@ function init(walData) {
     var chartGroup = svg.append("g")
         .attr("transform", `translate(${margin.left}, ${margin.top})`);
 
-    // Initial Params
+    // initial Params
     var chosenXAxis = "Fuel_Price";
 
     // function used for updating xAxis var upon click on axis label
