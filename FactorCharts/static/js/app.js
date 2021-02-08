@@ -1,6 +1,6 @@
 var url = "/api/walmart"
 
-d3.csv("walmartdata.csv").then(wmartData => {
+d3.json(url).then(wmartData => {
   //if (err) throw err;
   var dropRef = []
   var storesID = d3.map(wmartData, function(d){return d.Store;}).keys()
@@ -10,23 +10,13 @@ d3.csv("walmartdata.csv").then(wmartData => {
   })
   console.log(dropRef)
   dropRef.map(store => d3.select("#selDataset").append("option").attr("value", store).html(store));
-  // d3.select("#selDataset").selectAll("option")
-  //   .append("option")
-  //   .data(d3.map(wmartData, function(d){return d.Store;}).keys())
-  //   .enter()
-  //   .append("option")
-  //   .text(function(d){return d;})
-  //   .attr("value",function(d){return d;});
-  // d3.select("#selDataset")
-  //   .append("option")
-  //   .text("All Stores"); 
   init(wmartData);
 })
 
 d3.selectAll("#selDataset").on('change', updateChart);
 
 function updateChart() {
-  d3.csv("walmartdata.csv"). then(data => {
+  d3.json(url).then(data => {
     var dropDown = d3.select("#selDataset").node().value;
     console.log(dropDown)
     d3.select(".chart").html("");
@@ -66,8 +56,7 @@ function init(walData) {
     var width = svgWidth - margin.left - margin.right;
     var height = svgHeight - margin.top - margin.bottom;
 
-    // Create an SVG wrapper, append an SVG group that will hold our chart,
-    // and shift the latter by left and top margins.
+    // Create an SVG wrapper
     var svg = d3
         .select(".chart")
         .append("svg")
@@ -80,9 +69,6 @@ function init(walData) {
 
     // Initial Params
     var chosenXAxis = "Fuel_Price";
-
-    // function used for updating x-scale var upon click on axis label
-
 
     // function used for updating xAxis var upon click on axis label
     function renderAxes(newXScale, xAxis) {
@@ -134,7 +120,6 @@ function init(walData) {
         circlesGroup.on("mouseover", function(data) {
             toolTip.show(data);
         })
-        // onmouseout event
             .on("mouseout", function(data, index) {
             toolTip.hide(data);
             });
@@ -142,7 +127,6 @@ function init(walData) {
         return circlesGroup;
     }
     function xScale(walData, chosenXAxis) {
-      // create scales
         var xLinearScale = d3.scaleLinear()
           .domain([d3.min(walData, d => d[chosenXAxis]),
             d3.max(walData, d => d[chosenXAxis])
@@ -152,7 +136,7 @@ function init(walData) {
         return xLinearScale;
     
       }
-  // xLinearScale function above csv import
+
     var xLinearScale = xScale(walData, chosenXAxis);
 
     // Create y scale function
@@ -198,7 +182,7 @@ function init(walData) {
         if (d.Holiday_Name !== "No Holiday")
           return "blue";
         else {
-          return "red";
+          return "orange";
         }
       }) 
       .on('click', function(d) {
@@ -232,27 +216,27 @@ function init(walData) {
       .attr("transform", `translate(${width / 2}, ${height + 20})`);
 
     var FuelLabel = labelsGroup.append("text")
-      .attr("x", 0)
-      .attr("y", 20)
+      .attr("x", -200)
+      .attr("y", 30)
       .attr("value", "Fuel_Price") // value to grab for event listener
       .classed("active", true)
       .text("Fuel Price");
 
     var CPILabel = labelsGroup.append("text")
-      .attr("x", 0)
-      .attr("y", 40)
+      .attr("x", 100)
+      .attr("y", 30)
       .attr("value", "CPI") // value to grab for event listener
       .classed("inactive", true)
       .text("CPI");
     var UnemLabel = labelsGroup.append("text")
       .attr("x", 0)
-      .attr("y", 60)
+      .attr("y", 30)
       .attr("value", "Unemployment") // value to grab for event listener
       .classed("inactive", true)
       .text("Unemployment"); 
     var TempLabel = labelsGroup.append("text")
-      .attr("x", 0)
-      .attr("y", 80)
+      .attr("x", -100)
+      .attr("y", 30)
       .attr("value", "Temperature_C") // value to grab for event listener
       .classed("inactive", true)
       .text("Temperature C"); 
