@@ -80,12 +80,13 @@
                 <h1 style = "color:white;">Weekly Sales <img src = "{{ url_for('static', filename='Logo.png') }}" alt ="Walmart Logo" id = "logo"></h1>
             </div>
         </div>
+      <br><br>
       <div class="container">
         <div class="row">
-          <div class="col-md-2">
+          <div class="col-md-2" style = "text-align:center;">
             <div class="well">
                 <div>
-                <h5>Store ID No.:</h5>
+                <h5 style = "color:#0279E2;">Store ID No.:</h5>
                   <select id="selDataset1"></select>
               </div>
               <div class="button">
@@ -93,16 +94,21 @@
               </div>
             </div>
           </div>
-          <div class="col-md-2" style = "text-align:center;">
-            <h4>Store Selected:</h4>
+          <div class="col-md-4" style = "text-align:center;">
+            <h5  style = "color:#0279E2;">Store Selected:</h5>
             <div class="well">						
-              <h4 class="counter">All Stores</h3>	
+              <h6 class="counter">All Stores</h6>	
             </div>
           </div>
+          <div class = "col-md-6"></div>
         </div>
-        <div class="chart">
+      </div>
+      <div class = "row">
+        <div class = "col-md-1"></div>
+        <div class = "col-md-10">
+          <div class="chart" style = "margin-top:30px;"></div>
         </div>
-
+        <div class = "col-md-1"></div>
       </div>
       <hr>
     </section><!-- End About Section -->

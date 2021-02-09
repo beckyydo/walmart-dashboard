@@ -1,32 +1,43 @@
 // ******************************** WEEKLY SALES ********************************
-var url = "/api/walmart"
+var url1 = "/api/walmart"
 
-d3.json(url).then(wmartData => {
+d3.json(url1).then(wmartData => {
   //if (err) throw err;
   var dropRef = []
+
   var storesID = d3.map(wmartData, function(d){return d.Store;}).keys()
+
+  storesID.sort(function(a, b){
+    return a - b})
+
   dropRef.push("All Stores")
+
   storesID.forEach(function(d) {
     dropRef.push(d)
   })
   console.log(dropRef)
+
   dropRef.map(store => d3.select("#selDataset1").append("option").attr("value", store).html(store));
+
   getChart(wmartData);
 })
 
 d3.selectAll("#selDataset1").on('change', updateChart);
 
 function updateChart() {
-  d3.json(url).then(data => {
+
+  d3.json(url1).then(data => {
     var dropDown = d3.select("#selDataset1").node().value;
     console.log(dropDown)
     d3.select(".chart").html("");
     var updateData;
     if (dropDown === "All Stores") {
       getChart(data)
+      console.log(data)
     }
     else {
-      updateData = data.filter(row => row.Store === dropDown)
+      console.log(data)
+      updateData = data.filter(row => row.Store == dropDown)
       console.log(updateData)
       getChart(updateData)
     }   
@@ -181,9 +192,9 @@ function getChart(walData) {
       .attr("stroke", "black")
       .attr("fill", function(d) {
         if (d.Holiday_Name !== "No Holiday")
-          return "blue";
+          return "#0279E2";
         else {
-          return "orange";
+          return "#FEBB0C";
         }
       }) 
       .on('click', function(d) {
@@ -222,25 +233,24 @@ function getChart(walData) {
       .attr("value", "Fuel_Price") // value to grab for event listener
       .classed("active", true)
       .text("Fuel Price");
-
-    var CPILabel = labelsGroup.append("text")
-      .attr("x", 100)
-      .attr("y", 30)
-      .attr("value", "CPI") // value to grab for event listener
-      .classed("inactive", true)
-      .text("CPI");
-    var UnemLabel = labelsGroup.append("text")
-      .attr("x", 0)
-      .attr("y", 30)
-      .attr("value", "Unemployment") // value to grab for event listener
-      .classed("inactive", true)
-      .text("Unemployment"); 
     var TempLabel = labelsGroup.append("text")
       .attr("x", -100)
       .attr("y", 30)
       .attr("value", "Temperature_C") // value to grab for event listener
       .classed("inactive", true)
       .text("Temperature C"); 
+    var UnemLabel = labelsGroup.append("text")
+      .attr("x", 15)
+      .attr("y", 30)
+      .attr("value", "Unemployment") // value to grab for event listener
+      .classed("inactive", true)
+      .text("Unemployment");
+    var CPILabel = labelsGroup.append("text")
+      .attr("x", 95)
+      .attr("y", 30)
+      .attr("value", "CPI") // value to grab for event listener
+      .classed("inactive", true)
+      .text("CPI");
     // append y axis
     chartGroup.append("text")
       .attr("transform", "rotate(-90)")
