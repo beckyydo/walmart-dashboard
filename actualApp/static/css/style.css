@@ -53,6 +53,7 @@
 .active {
     font-family: serif;
     font-weight: bold;
+    font-size: 5px;
     fill: #000;
     fill: #FEBB0C;
     transition: fill 0.3s ease-out;
@@ -61,6 +62,7 @@
 .inactive {
     font-family: serif;
     font-weight: lighter;
+    font-size: 5px;
     fill: #0279E2;
     transition: fill 0.3s ease-out;
     text-anchor: middle;
