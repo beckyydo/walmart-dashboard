@@ -79,7 +79,13 @@ def market_route():
     market_df = sorted(market_df, key=lambda k: k['State']) 
     return jsonify(market_df)
 
-
+@app.route("/api/store")
+def store():
+    import geojson
+    with open('data/walmartLocations.geojson') as f:
+        gj = geojson.load(f)
+    return gj
+    
 if __name__ == "__main__":
     app.run()
 

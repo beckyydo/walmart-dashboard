@@ -277,7 +277,11 @@ function updatePlotly(){
     
 // ******************************** STORE LOCATION ********************************
 
-var link = '/data/walmartLocations.geojson'
+var link = '/api/store'
+
+d3.json(link).then( data => {
+    console.log(data);
+});
 
 fetch(link).then(function(response) {
     return response.json();
