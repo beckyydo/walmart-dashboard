@@ -3,18 +3,28 @@ var url = "/api/market_share"
 
 // Initalize Graph and Tables
 d3.json(url).then(data =>{
+    console.log(data)
     // Retrieve State Name List
     var state_name = data.map(d => d.State);
+    var share_cat = data.map(d => d.Share_Cat);
+
     // Add All Option in Menu
     state_name.push("*All")
+    share_cat.push("*All")
     // Sort and Get Unique State Name for Dropdown Menu
     var unique_state = [...new Set(state_name.sort())]; 
+    var unique_cat = [...new Set(share_cat.sort())]; 
     // Dropdown Menu
     var DropDownMenu = d3.select("#selDataset");
+    var DropDownMenu2 = d3.select("#selDataset2");
     // Remove old html id names
     DropDownMenu.html("");    
+    DropDownMenu2.html("");
     // Append id names option to html
     unique_state.map(id_name => DropDownMenu.append("option").attr("value",id_name).html(id_name));
+    unique_cat.map(id_name => DropDownMenu2.append("option").attr("value",id_name).html(id_name));
+
+
     // Initalize Data 
     init(data);
 })
@@ -97,22 +107,61 @@ function init(data){
     
 // Update Plot
 d3.selectAll("#selDataset").on('change', updatePlotly);
-    
+// Update Plot
+d3.selectAll("#selDataset2").on('change', updatePlotly);
+
 // Update Plot Function
 function updatePlotly(){
     
     d3.json(url).then(data => {
             // Get Value From Search Bar
             var dropdownMenu = d3.select("#selDataset").node().value;
+            var dropdownMenu2 = d3.select("#selDataset2").node().value;
             // Clear graphs
             d3.select("#market-share").html("");
     
     
-            if (dropdownMenu == "*All"){
+            if (dropdownMenu == "*All" && dropdownMenu2 == "*All"){
                 init(data);
             }
             else {
-                var filter_data = data.filter(row => row.State == dropdownMenu);
+                if (dropdownMenu2 == "*All"){
+                    var filter_data = data.filter(row => row.State == dropdownMenu);
+                } else if (dropdownMenu == "*All"){
+                    if (dropdownMenu2 == '>90%'){
+                        var filter_data = data.filter(row => row.Share > 90);
+                    } else if (dropdownMenu2 =='80%<_<90%'){
+                        var filter_data = data.filter(row => row.Share <=90 && row.Share > 80);
+                    } else if (dropdownMenu2 =='70%<_<80%'){
+                        var filter_data = data.filter(row => row.Share <=80 && row.Share > 70);
+                    } else if (dropdownMenu2 =='60%<_<70%'){
+                        var filter_data = data.filter(row => row.Share <=70 && row.Share > 60);
+                    } else {
+                        var filter_data = data.filter(row => row.Share <=60);
+                    }
+                }
+                else{
+                    if (dropdownMenu2 == '>90%'){
+                        var filter_data = data.filter(row => row.Share > 90);
+                    } else if (dropdownMenu2 =='80%<_<90%'){
+                        var filter_data = data.filter(row => row.Share <=90 && row.Share > 80);
+                    } else if (dropdownMenu2 =='70%<_<80%'){
+                        var filter_data = data.filter(row => row.Share <=80 && row.Share > 70);
+                    } else if (dropdownMenu2 =='60%<_<70%'){
+                        var filter_data = data.filter(row => row.Share <=70 && row.Share > 60);
+                    } else {
+                        var filter_data = data.filter(row => row.Share <=60);
+                    }
+                    var filter_data = filter_data.filter(row => row.State == dropdownMenu)
+                }                    
+                var error = d3.select("#Error")
+                if (filter_data =={}){
+                    error.html("")
+                    error.html("Combination Does Not Work Try Again or Reset")
+                }
+                else {
+                    error.html("")
+                }
                 var scl = [[0,'rgb(5, 10, 172)'],[0.35,'rgb(40, 60, 190)'],[0.5,'rgb(70, 100, 245)'], [0.6,'rgb(90, 120, 245)'],[0.7,'rgb(106, 137, 247)'],[1,'rgb(220, 220, 220)']];
     
                 var data2 = [{
@@ -183,4 +232,6 @@ function updatePlotly(){
             }
     })
 };
+
+
     

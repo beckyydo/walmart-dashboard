@@ -48,9 +48,20 @@ def market_route():
     # Create dictionary from pulled data
     market_df = []
     for row in data:
+        if (row[5] > 90):
+            category = '>90%'
+        elif (row[5] > 80 and row[5]<=90):
+            category = '80%<_<90%'
+        elif (row[5] > 70 and row[5]<=80):
+            category = '70%<_<80%'        
+        elif (row[5] > 60 and row[5]<=70):
+            category = '60%<_<70%'
+        else:
+            category = '<60%'
+
         market_dict = {'City': row[0],'State': row[1], 
         'Lat': row[2], 'Lon': row[3], 'Population': row[4],
-        'Share': row[5]}
+        'Share': row[5], 'Share_Cat': category}
         market_df.append(market_dict)
     # Sort list of dictionary by key City then State
     market_df = sorted(market_df, key=lambda k: k['City']) 
