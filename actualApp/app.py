@@ -12,6 +12,7 @@ from sqlalchemy.ext.automap import automap_base
 from sqlalchemy.orm import Session
 from sqlalchemy import create_engine
 from sqlalchemy import func
+import geojson
 
 #################################################
 # Flask Setup
@@ -38,6 +39,9 @@ session = Session(engine)
 @app.route("/")
 def home():
     return render_template("index.html")
+
+# Weekly Sales Service Route
+
 
 # Stock Service Route
 @app.route("/api/stock")
@@ -79,13 +83,15 @@ def market_route():
     market_df = sorted(market_df, key=lambda k: k['State']) 
     return jsonify(market_df)
 
-@app.route("/api/store")
-def store():
-    import geojson
-    with open('data/walmartLocations.geojson') as f:
-        gj = geojson.load(f)
-    return gj
+# # Store Location
+# @app.route("/api/store")
+# def store():
+#     with open('/data/walmartLocations.geojson') as f:
+#         gj = geojson.load(f)
+#         gj = [gj]
+#     return jsonify(gj)
     
+
 if __name__ == "__main__":
     app.run()
 
