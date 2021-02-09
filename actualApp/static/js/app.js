@@ -1,3 +1,5 @@
+// ******************************** STORE LOCATION ********************************
+
 // *********************************** STOCK ***********************************
 d3.json("/api/stock").then(function(data){
   
@@ -274,6 +276,7 @@ function updatePlotly(){
 };
     
 // ******************************** STORE LOCATION ********************************
+
 var link = '/data/walmartLocations.geojson'
 
 fetch(link).then(function(response) {
