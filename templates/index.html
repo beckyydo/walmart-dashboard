@@ -119,38 +119,52 @@
             </div>
         </div>
 
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6" data-aos="fade-up">
-            <h3 class="resume-title">Sumary</h3>
-            <div class="resume-item pb-0">
-              <h4>Alex Smith</h4>
-              <p><em>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</em></p>
-              <ul>
-                <li>Portland par 127,Orlando, FL</li>
-                <li>(123) 456-7891</li>
-                <li>alice.barkley@example.com</li>
-              </ul>
-            </div>
-
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Master of Fine Arts &amp; Graphic Design</h4>
-              <h5>2015 - 2016</h5>
-              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-              <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
-            </div>
-            <div class="resume-item">
-              <h4>Bachelor of Fine Arts &amp; Graphic Design</h4>
-              <h5>2010 - 2014</h5>
-              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-              <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>
+        <section class = "testimonials section-bg">
+          <div class = "container-fluid">
+            <div class = "market-banner2">
+              <h2 style = "color:white;">Summary</h2>
             </div>
           </div>
-
-        </div>
-
-      </div>
+          <div class = "row" style = "margin-top:70px;">
+            <div class = "col-md-4">
+              <div class="testimonial-item center">
+                <p>
+                  <i class="bx center"></i>
+                    <span style = "color:#0279E2;">&#8226;</span> Used plotly and d3 in javascript<br>
+                    <span style = "color:#0279E2;">&#8226;</span> Used plotly and d3 in javascript
+                  <i class="bx"></i>
+                </p>
+                <img src = "{{ url_for('static', filename='img/Engineering_Icon.png') }}" alt ="" id class = "testimonial-img">
+                <h3>Engineering</h3>
+              </div>
+            </div>
+            <div class = "col-md-4">
+              <div class="testimonial-item center" data-aos="fade-up" data-aos-delay="100">
+                <p>
+                  <i class="bx"></i>
+                  <span style = "color:#0279E2;">&#8226;</span> Trouble initiating 2 filters without affecting the other<br>
+                  <span style = "color:#0279E2;">&#8226;</span> Cannot compare market share changes over time
+                  <i class="bx"></i>
+                </p>
+                <img src = "{{ url_for('static', filename='img/Error_Icon.png') }}" alt ="" id class = "testimonial-img">
+                <h3>Issues & Limitations</h3>
+              </div>
+            </div>
+            <div class = "col-md-4">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
+                <p>
+                  <i class="bx"></i>
+                  <span style = "color:#0279E2;">&#8226;</span> Identify market share across the country in each state<br>
+                  <span style = "color:#0279E2;">&#8226;</span> Can look to improve marketshare in regions where it is low
+                  <i class="bx"></i>
+                </p>
+                <img src = "{{ url_for('static', filename='img/Function_Icon.png') }}" alt ="" id class = "testimonial-img">
+                <h3>Functionality</h3>
+              </div>
+              </div>
+              </div>
+            </div>
+        </section>
     </section><!-- End Resume Section -->
 
     <!-- ======= Market Share Section ======= -->
@@ -196,9 +210,56 @@
         </div>
         </div>
     </div>  
-    <hr>
-    </section><!-- End Portfolio Section -->
+    </section>
+    <!-- End Portfolio Section -->
 
+    <!-- Notes -->
+    <section class = "testimonials section-bg">
+      <div class = "container-fluid">
+        <div class = "market-banner2">
+          <h2 style = "color:white;">Summary</h2>
+        </div>
+      </div>
+      <div class = "row" style = "margin-top:70px;">
+        <div class = "col-md-4">
+          <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
+            <p style = "height:150px;">
+              <i class="bx"></i>
+              <span style = "color:#0279E2;">&#8226;</span> Used plotly and d3 in javascript<br>
+              <span style = "color:#0279E2;">&#8226;</span> Created a drop down menu using the select tag
+              <i class="bx"></i>
+            </p>
+            <img src = "{{ url_for('static', filename='img/Engineering_Icon.png') }}" alt ="" id class = "testimonial-img">
+            <h3>Engineering</h3>
+          </div>
+        </div>
+        <div class = "col-md-4">
+          <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
+            <p style = "height:150px;">
+              <i class="bx"></i>
+              <span style = "color:#0279E2;">&#8226;</span> Trouble initiating 2 filters without affecting the other<br>
+              <span style = "color:#0279E2;">&#8226;</span> Cannot compare market share changes over time
+              <i class="bx"></i>
+            </p>
+            <img src = "{{ url_for('static', filename='img/Error_Icon.png') }}" alt ="" id class = "testimonial-img">
+            <h3>Issues & Limitations</h3>
+          </div>
+        </div>
+        <div class = "col-md-4">
+          <div class="testimonial-item" data-aos="fade-up" data-aos-delay="300">
+            <p style = "height:150px;">
+              <i class="bx"></i>
+              <span style = "color:#0279E2;">&#8226;</span> Identify market share across the country in each state<br>
+              <span style = "color:#0279E2;">&#8226;</span> Can look to improve marketshare in regions where it is low
+              <i class="bx"></i>
+            </p>
+            <img src = "{{ url_for('static', filename='img/Function_Icon.png') }}" alt ="" id class = "testimonial-img">
+            <h3>Functionality</h3>
+          </div>
+          </div>
+          </div>
+        </div>
+    </section>
     <!-- ======= Store Location Section ======= -->
     <section id="location" class="services">
         <div class = "container-fluid">
