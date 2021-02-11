@@ -14,7 +14,7 @@ var y = d3.scaleLinear().range([height, 0]);
 var salesline = d3.line()	
     .x(function(d) { return x(d.month); })
     .y(function(d) { return y(d.sales); });
-    
+
 // Adds the svg canvas
 var svg = d3.select("body")
     .append("svg")
@@ -25,7 +25,9 @@ var svg = d3.select("body")
               "translate(" + margin.left + "," + margin.top + ")");
 
 // Get the data
-d3.csv("sales-by-period-by-year.csv").then(function(data) {
+d3.json("/data").then(function(data) {
+  
+  console.log(data)
 
   data.forEach(function(d) {
 		d.month = +d.month;
@@ -43,9 +45,20 @@ d3.csv("sales-by-period-by-year.csv").then(function(data) {
 
     // Loop through each symbol / key
     dataNest.forEach(function(d) { 
-        svg.append("path")
-            .attr("class", "line")
-            .attr("d", salesline(d.values));
+      if (d.key == 2010) {
+        var lineColor =  "CornflowerBlue"
+      }
+      else if (d.key == 2011) {
+        var lineColor = "DarkCyan"
+      }
+      else {
+        var lineColor =  "DarkSlateBlue"
+      };
+        
+      svg.append("path")
+      .attr("class", "line")
+      .attr("d", salesline(d.values))
+      .style("stroke", lineColor);
 
     });
 
@@ -60,16 +73,8 @@ d3.csv("sales-by-period-by-year.csv").then(function(data) {
       .attr("class", "axis")
       .call(d3.axisLeft(y));
 
-    // Append axes to the chart
-    chartGroup.append("g")
-      .attr("transform", `translate(0, ${height})`)
-      .call(bottomAxis);
-
-    chartGroup.append("g")
-      .call(leftAxis);
-
     // Create axes labels
-    chartGroup.append("text")
+    svg.append("text")
       .attr("transform", "rotate(-90)")
       .attr("y", 0 - margin.left + 40)
       .attr("x", 0 - (height / 2))
@@ -79,7 +84,7 @@ d3.csv("sales-by-period-by-year.csv").then(function(data) {
       .style("font-weight", "bold")
       .text("Sales ($)");
 
-    chartGroup.append("text")
+      svg.append("text")
       .attr("transform", `translate(${width /2}, ${height + margin.top + 30})`)
       .attr("class", "axisText")
       .style("font", "20px sans-serif")
