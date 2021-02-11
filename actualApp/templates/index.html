@@ -110,7 +110,62 @@
         </div>
         <div class = "col-md-1"></div>
       </div>
-    </section><!-- End About Section -->
+    </section>
+    <!-- Weekly Sales Summary -->
+    <section class = "testimonials section-bg">
+      <div class = "container-fluid">
+        <div class = "market-banner2">
+          <h2 style = "color:white;">Summary</h2>
+        </div>
+      </div>
+      <div class = "row" style = "margin-top:70px;">
+        <div class = "col-md-4">
+          <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
+            <p style = "height:270px;">
+              <i class="bx"></i>
+              <span style = "color:#0279E2;">&#8226;</span> Built using d3 in javascript. Data-bound circles with conditional attributes
+               on axes created by scaling functions<br>
+              <span style = "color:#0279E2;">&#8226;</span> Responsive labels that when selected will trigger transformations in the circles 
+              and axes relating to the different desired data <br>
+              <span style = "color:#0279E2;">&#8226;</span> Event listeners for changing dropdown or clicks on circles that filter 
+              individual store data
+              <i class="bx"></i>
+            </p>
+            <img src = "{{ url_for('static', filename='img/Engineering_Icon.png') }}" alt ="" id class = "testimonial-img">
+            <h3>Engineering</h3>
+          </div>
+        </div>
+        <div class = "col-md-4">
+          <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
+            <p style = "height:270px;">
+              <i class="bx"></i><br>
+              <span style = "color:#0279E2;">&#8226;</span> Isolating the circles by store number without filtering 
+              out the rest was challenging, this was solved by attributing ids to them based on their store number <br>
+              <span style = "color:#0279E2;">&#8226;</span> The sample size of only 45 stores over only 3 years from 
+              ten years ago
+              <i class="bx"></i>
+            </p>
+            <img src = "{{ url_for('static', filename='img/Error_Icon.png') }}" alt ="" id class = "testimonial-img">
+            <h3>Issues & Limitations</h3>
+          </div>
+        </div>
+        <div class = "col-md-4">
+          <div class="testimonial-item" data-aos="fade-up" data-aos-delay="300">
+            <p style = "height:270px;">
+              <i class="bx"></i><br><br>
+              <span style = "color:#0279E2;">&#8226;</span> Visualize the strength of the relationship between weekly sales and the 4 
+              factors as a whole and at individual stores<br>
+              <span style = "color:#0279E2;">&#8226;</span> Compare the performances of different stores under different conditions
+              <i class="bx"></i>
+            </p>
+            <img src = "{{ url_for('static', filename='img/Function_Icon.png') }}" alt ="" id class = "testimonial-img">
+            <h3>Functionality</h3>
+          </div>
+          </div>
+          </div>
+        </div>
+    </section>
+    <!-- End Weekly Sales Section -->
 
     <!-- ======= Stock Section ======= -->
     <section id="stock" class="resume">
