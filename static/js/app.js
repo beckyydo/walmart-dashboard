@@ -157,7 +157,7 @@ function updatePlotly(){
                 var error = d3.select("#Error")
                 if (filter_data =={}){
                     error.html("")
-                    error.html("Combination Does Not Work Try Again or Reset")
+                    error.text("Combination Does Not Work Try Again or Reset")
                 }
                 else {
                     error.html("")
