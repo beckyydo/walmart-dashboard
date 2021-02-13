@@ -11,13 +11,42 @@
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </head>
 
-<body>
+<body onload="init()">
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
       <h1 class="display-4">Walmart</h1>
       <p class="lead">Walmart Stock Data</p>
     </div>
   </div>
+  
+    <div class="ml-1 row">
+      <div class="col-md-2">
+          <div class="panel-heading">Filter Search</div>
+          <br>
+      </div>
+    </div>
+    <form>
+      <div class="ml-1 form-group">
+        <div class="ml-1 row">
+          <div class="col-md-2">
+            <label for="date">Date (from)</label>
+            <input class="form-control" id="datetime1" type="text" placeholder="2010-01-01">
+          </div>
+          <div class="ml-1 col-md-2">
+            <label for="date">Date (to)</label>
+            <input class="form-control" id="datetime2" type="text" placeholder="2020-01-01">
+          </div>
+        </div>      
+      </div>
+      <div class="ml-1 row">
+        <div class="ml-1 btn-group mr-2" role="group" aria-label="First group">
+          <button id="filter-btn" type="button" class="btn-toolbar btn-secondary">Filter plot</button>
+        </div>
+        <div class="ml-1 btn-group mr-2" role="group" aria-label="Second group">
+          <button id="reset-btn" type="button" class="btn-toolbar btn-secondary">All</button>
+        </div>
+      </div>
+    </form>
   
   <div id="plot"></div>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
