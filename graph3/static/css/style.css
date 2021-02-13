@@ -28,3 +28,9 @@ path {
     stroke-width: 1;
     shape-rendering: crispEdges;
 }
+
+.legend {
+    fill:rgb(255, 255, 255);
+    stroke:rgb(204, 13, 13);
+    opacity:0.8;
+}

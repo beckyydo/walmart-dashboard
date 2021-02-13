@@ -1,5 +1,5 @@
 //Set the dimensions of the canvas / graph
-var margin = {top: 30, right: 20, bottom: 30, left: 120},
+var margin = {top: 30, right: 80, bottom: 120, left: 130},
     width = 960 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 
@@ -81,14 +81,32 @@ d3.json("/data").then(function(data) {
       .attr("dy", "1em")
       .attr("class", "axisText")
       .style("fill", "black")
+      .style("font", "17px sans-serif")
       .style("font-weight", "bold")
       .text("Sales ($)");
 
       svg.append("text")
       .attr("transform", `translate(${width /2}, ${height + margin.top + 30})`)
       .attr("class", "axisText")
-      .style("font", "20px sans-serif")
+      .style("font", "17px sans-serif")
       .style("font-weight", "bold")
       .text("Month");
+
+      //Test1
+      var legend_keys = ["2010", "2011", "2012"]
+
+      var lineLegend = svg.selectAll(".lineLegend").data(legend_keys)
+          .enter().append("g")
+          .attr("class","lineLegend")
+          .attr("transform", function (d,i) {
+                  return "translate(" + width + "," + (i*20)+")";
+              });
+
+      lineLegend.append("text").text(function (d) {return d;})
+          .attr("transform", "translate(15,9)"); //align texts with boxes
+
+      lineLegend.append("rect")
+          .attr("fill", function (d, i) {return color_scale(d); })
+          .attr("width", 10).attr("height", 10); 
 
 });
