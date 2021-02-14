@@ -3,7 +3,6 @@ const url = '/api/store';
 
 d3.json(url).then(function(data) {
     console.log(data); 
-    // createMarkers(data);  
     createMap(data);
 
 });
@@ -19,8 +18,8 @@ function createMap(data) {
     data.forEach(function(dataPoint) {
         marker.push(
             L.marker([dataPoint.Latitude, dataPoint.Longitude], {
-                icon:myIcon
-                })
+                icon:myIcon})
+                .bindPopup("<h4>" + dataPoint.City + "</h4><hr /><h6>" + dataPoint.Address + "</h6>")
         )   
     })
 
@@ -29,10 +28,12 @@ function createMap(data) {
     var clusters = L.markerClusterGroup();
     clusters.addLayer(markerLayer);
 
-    var darkmap = L.tileLayer("https://api.mapbox.com/styles/v1/mapbox/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}", {
-        attribution: "Map data &copy; <a href=\"https://www.openstreetmap.org/\">OpenStreetMap</a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA</a>, Imagery © <a href=\"https://www.mapbox.com/\">Mapbox</a>",
+    var darkmap = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
         maxZoom: 18,
-        id: "dark-v10",
+        id: 'mapbox/dark-v10',
+        tileSize: 512,
+        zoomOffset: -1,
         accessToken: API_KEY
     });
 
@@ -52,12 +53,15 @@ function createMap(data) {
         tileSize: 512,
         zoomOffset: -1,
         accessToken: API_KEY
-    });    
+    });
+    
+    var watercolor = L.tileLayer.provider('Stamen.Watercolor');
 
     var baseMaps = {
         "Dark Map": darkmap,
         "Street Map": streetmap,
         "Light Map": lightmap,
+        "Watercolor": watercolor
     };
 
     var overlayMaps = {
@@ -65,19 +69,18 @@ function createMap(data) {
     };
 
     var myMap = L.map("map", {
-        center: [36.358498566, -94.209832494],
-        zoom: 5,
-        layers: [treasure]
+        center: [43.198510, -112.359900],
+        zoom: 4,
+        layers: [darkmap],
+        fullscreenControl: true
     });
-
-    // L.control.layers(baseMaps, overlayMaps, {
-    //     collapsed: true
-    // }).addTo(myMap);
     
     myMap.addLayer(clusters);
 
-    L.control.layers(baseMaps, overlayMaps, {
-        collapsed: true
-    }).addTo(myMap);
+    L.control
+        .layers(baseMaps, overlayMaps, {
+        collapsed: true})
+        .addTo(myMap);
 
+    
 }
