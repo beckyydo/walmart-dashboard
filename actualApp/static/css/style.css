@@ -37,43 +37,44 @@
 /*Weekly Sales*/
 .tooltip {
     position: absolute;
-    width: 135px;
-    height: 150px;
+    width: 155px;
+    height: 120px;
     padding: 2px;
     padding-top: 8px;
-    font: 8px sans-serif;
+    font: 12px sans-serif;
     color: white;
     text-align: center;
-    background: #0f308a;
+    background: #0279E2;
     border: 0;
     border-radius: 10px;
-}
+  }
   
-.axis-text {
+  .axis-text {
     font-family: serif;
     font-weight: bold;
     fill: #0279E2;
     text-anchor: middle;
-}
-.active {
+  }
+  
+  .active {
     font-family: serif;
     font-weight: bold;
-    font-size: 15px;
     fill: #000;
-    fill: #FEBB0C;
+    fill: #dda509;
     transition: fill 0.3s ease-out;
     text-anchor: middle;
-}
-.inactive {
+  }
+  
+  .inactive {
     font-family: serif;
     font-weight: lighter;
-    font-size: 15px;
-    fill: #0279E2;
+    fill: #1a35af;
     transition: fill 0.3s ease-out;
     text-anchor: middle;
-}
-.inactive:hover {
+  }
+  
+  .inactive:hover {
     fill: #f1410b;
     cursor: pointer;
-}
+  }
   
