@@ -31,6 +31,7 @@ Base.prepare(engine, reflect=True)
 walmart = Base.classes.walmart
 market_share = Base.classes.market_share
 stock = Base.classes.stock
+store = Base.classes.store
 
 session = Session(engine)
 
@@ -95,13 +96,17 @@ def market_route():
     market_df = sorted(market_df, key=lambda k: k['State']) 
     return jsonify(market_df)
 
-# # Store Location
-# @app.route("/api/store")
-# def store():
-#     with open('/data/walmartLocations.geojson') as f:
-#         gj = geojson.load(f)
-#         gj = [gj]
-#     return jsonify(gj)
+@app.route("/api/store")
+def store_route():
+    locationData = session.query(
+        store.address1, store.city, store.latitude, store.longitude).all()
+    session.close()
+    location = []
+    for row in locationData:
+        locationDict = {
+            'Address': row[0], 'City': row[1], 'Latitude': row[2], 'Longitude': row[3]}
+        location.append(locationDict)
+    return jsonify(location)
     
 
 if __name__ == "__main__":

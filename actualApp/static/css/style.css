@@ -77,3 +77,8 @@
   fill: #f1410b;
   cursor: pointer;
 }
+
+/**STORE LOCATION**/
+#map {
+  height: 500px;
+}
