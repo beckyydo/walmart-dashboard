@@ -30,7 +30,5 @@ path {
 }
 
 .legend {
-    fill:rgb(255, 255, 255);
-    stroke:rgb(204, 13, 13);
-    opacity:0.8;
+    font: 14px Arial;
 }

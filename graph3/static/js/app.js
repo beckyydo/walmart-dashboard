@@ -10,6 +10,16 @@ var margin = {top: 30, right: 80, bottom: 120, left: 130},
 var x = d3.scaleLinear().range([0, width]);  
 var y = d3.scaleLinear().range([height, 0]);
 
+// Set the legend keys
+var legend_keys = new Array("2010","2011","2012")
+var legend_colours = new Array("CornflowerBlue","DarkCyan","DarkSlateBlue")
+
+// cornflowerBlue:#6495ed
+// DarkCyan: #008b8b
+// DarkSlateBlue: #483d8b
+
+// var colours = d3.scale.ordinal().range(['#6495ed', '#008b8b', '#483d8b'])
+
 // Define the line
 var salesline = d3.line()	
     .x(function(d) { return x(d.month); })
@@ -43,23 +53,46 @@ d3.json("/data").then(function(data) {
         .key(function(d) {return d.year;})
         .entries(data);
 
-    // Loop through each symbol / key
-    dataNest.forEach(function(d) { 
-      if (d.key == 2010) {
-        var lineColor =  "CornflowerBlue"
-      }
-      else if (d.key == 2011) {
-        var lineColor = "DarkCyan"
-      }
-      else {
-        var lineColor =  "DarkSlateBlue"
-      };
-        
-      svg.append("path")
-      .attr("class", "line")
-      .attr("d", salesline(d.values))
-      .style("stroke", lineColor);
+    legendSpace = width/dataNest.length;
 
+    // Loop through each symbol / key
+    dataNest.forEach(function(d, i) { 
+       
+          svg.append("path")
+              .attr("class", "line")
+              .attr("d", salesline(d.values))
+              .style("stroke", legend_colours[i]);
+
+          // svg.append("text")
+          //     .attr("x", (legendSpace / 2) + i * legendSpace)  // space legend
+          //     .attr("y", height + (margin.bottom / 2) + 5)
+          //     .style("fill", function() {return legend_colours[i]; })
+          //     .attr("class", "legend")
+          //     .text(d.key);
+
+          svg.append("circle").attr("cx",200+ 60*i).attr("cy",10).attr("r", 6).style("fill", legend_colours[i])
+          svg.append("text").attr("x", 210 + 60*i).attr("y", 16).text(d.key).style("font-size", "15px").attr("alignment-baseline","middle")
+          
+
+          // var legend = svg.select(".legend")
+          //     .data(d.key)
+          //     .enter().append("g")
+          //     .attr("class", "legend")
+          //     .attr("transform", "translate(0," + i * 25 + ")");
+        
+          // legend.append("rect")
+          //     .attr("x", width - 18)
+          //     .attr("width", 18)
+          //     .attr("height", 18)
+          //     .style("fill", legend_colours[i] );
+          
+          // legend.append("text")
+          //     .attr("x", width - 24)
+          //     .attr("y", 9)
+          //     .attr("dy", ".35em")
+          //     .style("text-anchor", "end")
+          //     .text(d.key);
+      
     });
 
     // Add the X Axis
@@ -91,22 +124,5 @@ d3.json("/data").then(function(data) {
       .style("font", "17px sans-serif")
       .style("font-weight", "bold")
       .text("Month");
-
-      //Test1
-      var legend_keys = ["2010", "2011", "2012"]
-
-      var lineLegend = svg.selectAll(".lineLegend").data(legend_keys)
-          .enter().append("g")
-          .attr("class","lineLegend")
-          .attr("transform", function (d,i) {
-                  return "translate(" + width + "," + (i*20)+")";
-              });
-
-      lineLegend.append("text").text(function (d) {return d;})
-          .attr("transform", "translate(15,9)"); //align texts with boxes
-
-      lineLegend.append("rect")
-          .attr("fill", function (d, i) {return color_scale(d); })
-          .attr("width", 10).attr("height", 10); 
-
+    
 });
