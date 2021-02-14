@@ -82,3 +82,22 @@
 #map {
   height: 500px;
 }
+
+/**MONTHLY SALES**/
+.iframeContainer {
+  padding: 20px;
+  border: 1px solid #e3e3e3;
+}
+path { 
+  stroke: steelblue;
+  stroke-width: 2;
+  fill: none;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: grey;
+  stroke-width: 1;
+  shape-rendering: crispEdges;
+}
