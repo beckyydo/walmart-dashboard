@@ -57,11 +57,11 @@
       <nav class="nav-menu">
         <ul>
           <li><a href="#hero"><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a href="#weekly"><i class="bx bx-user"></i> <span>Weekly Sales</span></a></li>
-          <li><a href="#stock"><i class="bx bx-file-blank"></i> <span>Stock</span></a></li>
-          <li><a href="#share"><i class="bx bx-book-content"></i> Market Share</a></li>
-          <li><a href="#location"><i class="bx bx-server"></i> Store Location</a></li>
-          <li><a href="#contact"><i class="bx bx-envelope"></i> Contact</a></li>
+          <li><a href="#monthly"><i class="bx bx-coin-stack"></i> <span>Monthly Sales</span></a></li>
+          <li><a href="#weekly"><i class="bx bx-coin"></i> <span>Weekly Sales</span></a></li>
+          <li><a href="#stock"><i class="bx bx-line-chart"></i> Stock</a></li>
+          <li><a href="#share"><i class="bx bx-pie-chart"></i> Market Share</a></li>
+          <li><a href="#location"><i class="bx bx-store"></i> Store Location</a></li>
 
         </ul>
       </nav><!-- .nav-menu -->
@@ -83,7 +83,7 @@
   <main id="main">
 
   <!-- ======= Monthly Sales Section ======= -->
-  <section id="weekly" class="about">
+  <section id="monthly" class="about">
       <div class = "container-fluid">
         <div class = "market-banner">
             <h1 style = "color:white;">Monthly Sales Across Years <img src = "{{ url_for('static', filename='Logo.png') }}" alt ="Walmart Logo" id = "logo"></h1>
@@ -326,9 +326,9 @@
             <h5 style = "color:white;">Metro & Micro Region</h5>
         </div>
     </div>
-    <div class = "container " style = "text-align:center;">
+    <div class = "container">
         <div class = "row">
-            <div class = "col-l-4">
+            <div class = "col-md-2"style = "text-align:center;" >
                 <div>
                     <h5 id = "state-filter">State Filter</h5>
                     <select id="selDataset"></select>
@@ -350,14 +350,9 @@
                     </table>
                 </div>
             </div>
-            <div class = "col-l-8" style = "text-align:right;">
-                <div id = "market-share"></div>
+            <div class = "col-md-9" style = "text-align:right;">
+                <div id = "market-share" style ="width:100%;"></div>
             </div>
-        <div class = "row">
-            <div class = "col">
-
-            </div>
-        </div>
         </div>
     </div>  
     </section>
@@ -473,7 +468,6 @@
           </div>
         </div>
     </section>
-    
     <!-- End Store Location Section -->
 
   </main><!-- End #main -->

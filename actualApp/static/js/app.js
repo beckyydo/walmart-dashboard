@@ -18,13 +18,12 @@ var salesline = d3.line()
     .y(function(d) { return y(d.sales); });
 
 // Adds the svg canvas
-var svg = d3.select("linear")
-    .append("svg")
-        .attr("width", width + margin.left + margin.right)
-        .attr("height", height + margin.top + margin.bottom)
-    .append("g")
-        .attr("transform", 
-              "translate(" + margin.left + "," + margin.top + ")");
+var svg = d3.selectAll("#linear")
+        .append("svg")
+          .attr("width", width + margin.left + margin.right)
+          .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+          .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 // Get the data
 d3.json("/api/monthly").then(function(data) {
@@ -811,7 +810,7 @@ function createMap(data) {
     var myMap = L.map("map", {
         center: [43.198510, -112.359900],
         zoom: 4,
-        layers: [darkmap],
+        layers: [lightmap],
         fullscreenControl: true
     });
     
