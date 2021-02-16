@@ -1,13 +1,11 @@
 // ******************************** MONTHLY SALES ********************************
 //Set the dimensions of the canvas / graph
-var margin = {top: 30, right: 80, bottom: 120, left: 130},
+var margin = {top: 100, right: 80, bottom: 100, left: 200},
     width = 960 - margin.left - margin.right,
-    height = 500 - margin.top - margin.bottom;
+    height = 700 - margin.top - margin.bottom;
 
 // Set the ranges
-var scale_x = d3.scaleOrdinal().domain(["January","February","March","April","May","June","July", "August","September","October","November","December"])
-.range([0,width])
-var x = d3.scaleLinear().range([0, width]);  
+var x = d3.scaleTime().range([0, width]);  
 var y = d3.scaleLinear().range([height, 0]);
 
 // Set the legend keys
@@ -16,7 +14,7 @@ var legend_colours = new Array("CornflowerBlue","DarkCyan","DarkSlateBlue")
 
 // Define the line
 var salesline = d3.line()	
-    .scale_x(function(d) { return scale_x(d.month); })
+    .x(function(d) { return x(d.month); })
     .y(function(d) { return y(d.sales); });
 
 // Adds the svg canvas
@@ -27,18 +25,20 @@ var svg = d3.selectAll("#linear")
         .append("g")
           .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
+var parseTime = d3.timeParse("%m");
+
 // Get the data
 d3.json("/api/monthly").then(function(data) {
   
   console.log(data)
 
   data.forEach(function(d) {
-		d.month = +d.month;
+		d.month = parseTime(d.month);
 		d.sales = +d.sales;
     });
 
     // Scale the range of the data
-    scale_x.domain(d3.extent(data, function(d) { return d.month; }));
+    x.domain(d3.extent(data, function(d) { return d.month; }));
     y.domain([0, d3.max(data, function(d) { return d.sales; })]);
 
     // Nest the entries by symbol
@@ -64,7 +64,7 @@ d3.json("/api/monthly").then(function(data) {
     svg.append("g")
       .attr("class", "axis")
       .attr("transform", "translate(0," + height + ")")
-      .call(d3.axisBottom(scale_x));
+      .call(d3.axisBottom(x));
 
     // Add the Y Axis
     svg.append("g")
@@ -742,8 +742,7 @@ function updatePlotly(){
 //Establish data source
 const store_url = '/api/store';
 
-d3.json(store_url).then(function(data) {
-    console.log(data); 
+d3.json(store_url).then(function(data) { 
     createMap(data);
 
 });
