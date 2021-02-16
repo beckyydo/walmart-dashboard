@@ -1,9 +1,60 @@
+// Monthly Service Route
+var month_url = "/api/monthly"
+
+// Define SVG area dimensions
+var svgWidth = 960;
+var svgHeight = 500;
+
+// Define the chart's margins as an object
+var margin = {
+  top: 60,
+  right: 60,
+  bottom: 60,
+  left: 60
+};
+
+// Define dimensions of the chart area
+var chartWidth = svgWidth - margin.left - margin.right;
+var chartHeight = svgHeight - margin.top - margin.bottom;
+
+// Select body, append SVG area to it, and set its dimensions
+var svg = d3.selectAll("#monthly")
+  .append("svg")
+  .attr("width", svgWidth)
+  .attr("height", svgHeight);
+
+// Append a group area, then set its margins
+var chartGroup = svg.append("g")
+  .attr("transform", `translate(${margin.left}, ${margin.top})`);
+
+// Configure a parseTime function which will return a new Date object from a string
+var parseTime = d3.timeParse("%m");
+
+d3.json(month_url).then(data => {
+    console.log(data)
+
+    data.forEach(function(entry) {
+        entry.month = parseTime(entry.month);
+        entry.sales = +entry.sales;
+        console.log(entry.month)
+      });
+    
+})
+
+
+
+
+
+
+
+
+
+
 // Market Share Service Route
 var url = "/api/market_share"
 
 // Initalize Graph and Tables
 d3.json(url).then(data =>{
-    console.log(data)
     // Retrieve State Name List
     var state_name = data.map(d => d.State);
     var share_cat = data.map(d => d.Share_Cat);

@@ -12,6 +12,7 @@ from sqlalchemy.ext.automap import automap_base
 from sqlalchemy.orm import Session
 from sqlalchemy import create_engine
 from sqlalchemy import func
+import psycopg2
 
 #################################################
 # Flask Setup
@@ -67,6 +68,26 @@ def market_route():
     market_df = sorted(market_df, key=lambda k: k['City']) 
     market_df = sorted(market_df, key=lambda k: k['State']) 
     return jsonify(market_df)
+
+# Market Share Service Route
+@app.route("/api/monthly")
+def monthly():    
+    conn = psycopg2.connect(host='otto.db.elephantsql.com', port='5432', dbname='ofiglsqd', user='ofiglsqd', password='vVojrG9_zzJZCOLXz8rhKWXk6ivvYqAe')
+
+    cur = conn.cursor()
+    cur.execute("select year, month, sales::float from public.sales_by_period;")
+        
+    tmp_data = cur.fetchall()
+    payload = []
+    content = {}
+    for result in tmp_data:
+        content = {'year': result[0], 'month': result[1], 'sales': result[2]}
+        payload.append(content)
+        content = {}
+
+    cur.close()
+
+    return jsonify(payload)
 
 
 if __name__ == "__main__":
