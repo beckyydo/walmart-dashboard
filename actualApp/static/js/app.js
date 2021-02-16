@@ -5,6 +5,8 @@ var margin = {top: 30, right: 80, bottom: 120, left: 130},
     height = 500 - margin.top - margin.bottom;
 
 // Set the ranges
+var scale_x = d3.scaleOrdinal().domain(["January","February","March","April","May","June","July", "August","September","October","November","December"])
+.range([0,width])
 var x = d3.scaleLinear().range([0, width]);  
 var y = d3.scaleLinear().range([height, 0]);
 
@@ -14,7 +16,7 @@ var legend_colours = new Array("CornflowerBlue","DarkCyan","DarkSlateBlue")
 
 // Define the line
 var salesline = d3.line()	
-    .x(function(d) { return x(d.month); })
+    .scale_x(function(d) { return scale_x(d.month); })
     .y(function(d) { return y(d.sales); });
 
 // Adds the svg canvas
@@ -36,7 +38,7 @@ d3.json("/api/monthly").then(function(data) {
     });
 
     // Scale the range of the data
-    x.domain(d3.extent(data, function(d) { return d.month; }));
+    scale_x.domain(d3.extent(data, function(d) { return d.month; }));
     y.domain([0, d3.max(data, function(d) { return d.sales; })]);
 
     // Nest the entries by symbol
@@ -62,7 +64,7 @@ d3.json("/api/monthly").then(function(data) {
     svg.append("g")
       .attr("class", "axis")
       .attr("transform", "translate(0," + height + ")")
-      .call(d3.axisBottom(x));
+      .call(d3.axisBottom(scale_x));
 
     // Add the Y Axis
     svg.append("g")
