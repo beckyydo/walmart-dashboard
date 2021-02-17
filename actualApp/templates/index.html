@@ -115,8 +115,7 @@
                 <span style = "color:#0279E2;">&#8226;</span> Data was jsonify and the Javascript made use of d3.nest to group values on 
                 the keys and plot the separate line 
                 <i class="bx"></i>
-              </p>
-              <img src = "{{ url_for('static', filename='img/Engineering_Icon.png') }}" alt ="" id class = "testimonial-img">
+              </p>          
               <h3>Engineering</h3>
             </div>
           </div>
@@ -131,7 +130,7 @@
                 data is not known, so making inferences about all Walmart stores would be challenging
                 <i class="bx"></i>
               </p>
-              <img src = "{{ url_for('static', filename='img/Error_Icon.png') }}" alt ="" id class = "testimonial-img">
+              <img src = "{{ url_for('static', filename='img/Error_Icon.png') }}" alt ="" class = "testimonial-img">
               <h3>Issues & Limitations</h3>
             </div>
           </div>
@@ -145,7 +144,7 @@
                 the SQL query in the app route with the dropdown menus
                 <i class="bx"></i>
               </p>
-              <img src = "{{ url_for('static', filename='img/Function_Icon.png') }}" alt ="" id class = "testimonial-img">
+              <img src = "{{ url_for('static', filename='img/Function_Icon.png') }}" alt ="" class = "testimonial-img">
               <h3>Functionality</h3>
             </div>
             </div>
@@ -200,6 +199,15 @@
         </div>
       </div>
       <div class = "row" style = "margin-top:70px;">
+        <div id="overlay1" onclick="off1()">
+          <div id="text" style = "text-align: center;">
+            Weekly Sales 
+            <h6>Javascript</h6>
+            <div>
+              <img src="{{ url_for('static', filename='weekly_code.png') }}" style ="width:600px;">
+            </div>
+          </div>
+        </div>
         <div class = "col-md-4">
           <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
             <p style = "height:270px;">
@@ -212,7 +220,9 @@
               individual store data
               <i class="bx"></i>
             </p>
-            <img src = "{{ url_for('static', filename='img/Engineering_Icon.png') }}" alt ="" id class = "testimonial-img">
+            <button id ="view-code" onclick="on1()" style = "padding:0%">
+              <img src ="{{ url_for('static', filename='img/Engineering_Icon.png') }}" class="testimonial-img">
+            </button>  
             <h3>Engineering</h3>
           </div>
         </div>
@@ -446,7 +456,7 @@
             <div id="map" class ="container"></div>
           </div>
       </div>
-      <hr>
+      <br><br>
     </section><!-- End Services Section -->
     <!-- Store Location Summary -->
     <section class = "testimonials section-bg">
@@ -456,6 +466,15 @@
         </div>
       </div>
       <div class = "row" style = "margin-top:70px;">
+        <div id="overlay2" onclick="off2()">
+          <div id="text" style = "text-align:center;">
+            Store Location
+            <h6>Html & Javascript</h6>
+            <div>
+              <img src="{{ url_for('static', filename='store_code.png') }}" style ="width:1150px;">
+            </div>
+          </div>
+        </div>
         <div class = "col-md-4">
           <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
             <p style = "height:150px;">
@@ -465,7 +484,9 @@
               <span style = "color:#0279E2;">&#8226;</span>	Created a clustered map based on store locations
               <i class="bx"></i>
             </p>
-            <img src = "{{ url_for('static', filename='img/Engineering_Icon.png') }}" alt ="" id class = "testimonial-img">
+            <button id ="view-code" onclick="on2()" style = "padding:0%">
+              <img src ="{{ url_for('static', filename='img/Engineering_Icon.png') }}" class="testimonial-img">
+              </button>
             <h3>Engineering</h3>
           </div>
         </div>
@@ -519,6 +540,14 @@
 
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 
+    <script>
+    function on() {  document.getElementById("overlay").style.display = "block";}
+    function off() {  document.getElementById("overlay").style.display = "none";}
+    function on1() {  document.getElementById("overlay1").style.display = "block";}
+    function off1() {  document.getElementById("overlay1").style.display = "none";}
+    function on2() {  document.getElementById("overlay2").style.display = "block";}
+    function off2() {  document.getElementById("overlay2").style.display = "none";}
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
