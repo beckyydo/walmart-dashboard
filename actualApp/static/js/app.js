@@ -928,7 +928,8 @@ function createMap(data) {
         center: [43.198510, -112.359900],
         zoom: 4,
         layers: [lightmap],
-        fullscreenControl: true
+        fullscreenControl: true,
+        zoomControl: false
     });
     
     myMap.addLayer(clusters);
@@ -938,5 +939,5 @@ function createMap(data) {
         collapsed: true})
         .addTo(myMap);
 
-    
+    L.control.zoomslider().addTo(myMap);
 }
