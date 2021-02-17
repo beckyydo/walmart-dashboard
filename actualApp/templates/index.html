@@ -41,7 +41,7 @@
     <link href="static/vendor/aos/aos.css" rel="stylesheet">
 </head>
 
-<body>
+<body onload="init()">
     <!-- ======= Mobile nav toggle button ======= -->
   <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
 
@@ -258,6 +258,34 @@
 
       <div class="container">
         <div class="row">
+          <div class="ml-1 row">
+            <div class="col-md-2">
+                <div class="panel-heading" ><h5 style = "margin-top:20px;color:#0279E2;">Filter Search</h5></div>
+                <br>
+            </div>
+          </div>
+          <form>
+            <div class="ml-1 form-group">
+              <div class="ml-1 row">
+                <div class="col-md-2">
+                  <label for="date" style ="color:#0279E2">Date (from)</label>
+                  <input class="form-control" id="datetime1" type="text" placeholder="YYYY-MM-DD">
+                </div>
+                <div class="ml-1 col-md-2">
+                  <label for="date" style ="color:#0279E2">Date (to)</label>
+                  <input class="form-control" id="datetime2" type="text" placeholder="YYYY-MM-DD">
+                </div>
+              </div>      
+            </div>
+            <div class="ml-1 row">
+              <div class="ml-1 btn-group mr-2" role="group" aria-label="First group">
+                <button id="filter-btn" type="button" class="btn-toolbar btn-secondary">Filter plot</button>
+              </div>
+              <div class="ml-1 btn-group mr-2" role="group" aria-label="Second group">
+                <button id="reset-btn" type="button" class="btn-toolbar btn-secondary">All</button>
+              </div>
+            </div>
+          </form>
           <div class = "col" style = "width:100%;">
             <div id="plot"></div>
           </div>
