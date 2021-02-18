@@ -29,8 +29,6 @@ var parseTime = d3.timeParse("%m");
 
 // Get the data
 d3.json("/api/monthly").then(function(data) {
-  
-  console.log(data)
 
   data.forEach(function(d) {
 		d.month = parseTime(d.month);
@@ -567,24 +565,22 @@ function init(){
 
 
 // Create reset button
-var reset = d3.select("#reset-btn")
+var reset = d3.selectAll("#reset-btn")
 
 //with click the reset button run init function to load all data
-reset.on("click", init)
+reset.on("click", init())
 
 // Select the form and button
-var data_button = d3.select("#filter-btn");
+var data_button = d3.selectAll("#filter-btn");
 
 // Create event handlers
-data_button.on("click", runEnter);
+data_button.on("click", runEnter());
 
 // Complete the event handler function for the button
 function runEnter() {
-    d3.event.preventDefault();
     
-
     //select the plot area
-    var plotArea = d3.select("#plot")
+    var plotArea = d3.selectAll("#plot")
 
     //clear the plot area
     plotArea.html("")
@@ -592,19 +588,16 @@ function runEnter() {
     //get the input value of dates for search
     var inputValue1 = d3.select("#datetime1").property("value");
     var inputValue2 = d3.select("#datetime2").property("value");
-    console.log(inputValue1);
-    console.log(inputValue2);
 
     //clear the search field
-    d3.select("#datetime1").property('value', "");
-    d3.select("#datetime2").property('value', "");
+    d3.selectAll("#datetime1").property('value', "");
+    d3.selectAll("#datetime2").property('value', "");
 
    d3.json("/api/stock").then(function(tableData) {
 
     //filter the data based on the input dates
     var filteredData = tableData.filter(record => record.dates >= inputValue1);
-    var finalfilteredData= filteredData.filter(item=>item.dates<=inputValue2)
-    // console.log(finalfilteredData)
+    var finalfilteredData= filteredData.filter(item=>item.dates<=inputValue2);
 
     //defining variables to plot the filtered stock
     var dates1= finalfilteredData.map(row=>row.dates);
