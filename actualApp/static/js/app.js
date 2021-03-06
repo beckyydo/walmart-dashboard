@@ -36,7 +36,7 @@ d3.json("/api/monthly").then(function(data) {
     });
 
     // Scale the range of the data
-    x.domain(d3.extent(data, function(d) { return d.month; }));
+    x.domain(d3.extent(data, function(d) { console.log(d.month); return d.month; }));
     y.domain([0, d3.max(data, function(d) { return d.sales; })]);
 
     // Nest the entries by symbol
@@ -57,7 +57,7 @@ d3.json("/api/monthly").then(function(data) {
           svg.append("circle").attr("cx",200+ 60*i).attr("cy",10).attr("r", 6).style("fill", legend_colours[i])
           svg.append("text").attr("x", 210 + 60*i).attr("y", 16).text(d.key).style("font-size", "15px").attr("alignment-baseline","middle")
     });
-
+    
     // Add the X Axis
     svg.append("g")
       .attr("class", "axis")
