@@ -1,4 +1,4 @@
-# Walmart Dashboard Proposal
+# Walmart Dashboard
 ## Group Members: 
 (1) Hanieh Babaee <br />
 (2) May Lacdao <br />
