@@ -52,12 +52,12 @@ Key Columns: City, State, Population, Market Share % <br />
 
 ## Data Visualization
 ### (1) Candlestick Stock Graph
-![Candlestick Graph](images/Candlestick_Sample.PNG)
+![Candlestick Graph](images/Dashboard_Stock.PNG)
 
-### (2) Geomap Store Location
-#### Option 1
-![Map Graph](images/Map_Sample.jpg)
-#### Option 2
+### (2) Map 
+#### Market Share
+![Candlestick Graph](images/Dashboard_Market.PNG)
+#### Store Location
 ![Map Graph](images/Map2_Sample.PNG)
 
 ### (3) Weekly Sales Graph Across Years Separated by Store
